@@ -31,10 +31,10 @@ if ( ! class_exists( 'BEAF_Settings' ) ) {
 			add_action( 'admin_menu', array( $this, 'beaf_options' ) );
 
 			//save options
-			add_action( 'admin_init', array( $this, 'save_options' ) );
+			add_action( 'admin_init', array( $this, 'beaf_save_options' ) );
 
 			//ajax save options
-			add_action( 'wp_ajax_tf_options_save', array( $this, 'tf_ajax_save_options' ) );
+			add_action( 'wp_ajax_beaf_options_save', array( $this, 'beaf_ajax_save_options' ) );
 		}
 
 		public static function option( $key, $params = array() ) {
@@ -131,7 +131,7 @@ if ( ! class_exists( 'BEAF_Settings' ) ) {
 			}
 
 
-			$ajax_save_class = 'tf-ajax-save';
+			$ajax_save_class = 'beaf-ajax-save';
 
 			if ( ! empty( $this->option_sections ) ) :
 				?>
@@ -207,13 +207,13 @@ if ( ! class_exists( 'BEAF_Settings' ) ) {
 
 									<!-- Footer -->
 									<div class="tf-option-footer">
-										<button type="submit" class="tf-admin-btn tf-btn-secondary tf-submit-btn">
+										<button type="submit" class="tf-admin-btn tf-btn-secondary beaf-submit-btn">
 											<?php esc_attr_e( 'Save', 'bafg' ); ?>
 										</button>
 									</div>
 								</div>
 							</div>
-							<?php wp_nonce_field( 'tf_option_nonce_action', 'tf_option_nonce' ); ?>
+							<?php wp_nonce_field( 'beaf_option_nonce_action', 'beaf_option_nonce' ); ?>
 						</form>
 					</div>
 					<?php
@@ -224,11 +224,11 @@ if ( ! class_exists( 'BEAF_Settings' ) ) {
 		 * Save Options
 		 * @author Foysal
 		 */
-		public function save_options() {
+		public function beaf_save_options() {
 
 			// Add nonce for security and authentication. 
 			// Check if a nonce is valid.
-			if ( ! isset( $_POST['tf_option_nonce'] ) || ! wp_verify_nonce( $_POST['tf_option_nonce'], 'tf_option_nonce_action' ) ) {
+			if ( ! isset( $_POST['beaf_option_nonce'] ) || ! wp_verify_nonce( $_POST['beaf_option_nonce'], 'beaf_option_nonce_action' ) ) {
 				return;
 			}
 
@@ -319,14 +319,14 @@ if ( ! class_exists( 'BEAF_Settings' ) ) {
 		 * Ajax Save Options
 		 * @author Foysal
 		 */
-		public function tf_ajax_save_options() {
+		public function beaf_ajax_save_options() {
 			$response = [ 
 				'status' => 'error',
 				'message' => __( 'Something went wrong!', 'bafg' ),
 			];
 
-			if ( ! empty( $_POST['tf_option_nonce'] ) && wp_verify_nonce( $_POST['tf_option_nonce'], 'tf_option_nonce_action' ) ) {
-				$this->save_options();
+			if ( ! empty( $_POST['beaf_option_nonce'] ) && wp_verify_nonce( $_POST['beaf_option_nonce'], 'beaf_option_nonce_action' ) ) {
+				$this->beaf_save_options();
 				$response = [ 
 					'status' => 'success',
 					'message' => __( 'Options saved successfully!', 'bafg' ),

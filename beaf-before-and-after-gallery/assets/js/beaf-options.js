@@ -13,11 +13,11 @@
             },
         });
 
-        $(window).on('load', function() {
+        $(window).on('load', function () {
             $('.tf-field-disable').find('input, select, textarea, button, div, span').attr('disabled', 'disabled');
         });
 
-        $(document).on('click', '.tf-field-pro', function(e) {
+        $(document).on('click', '.tf-field-pro', function (e) {
             e.preventDefault();
             window.open('https://themefic.com/plugins/beaf/pro/');
         });
@@ -120,7 +120,7 @@
                         dateFormat: format,
                         minDate: minDate,
                         altInput: true,
-                        altFormat: tf_options.tf_admin_date_format,
+                        altFormat: beaf_options.tf_admin_date_format,
                         onChange: function (selectedDates, dateStr, instance) {
                             endDate.set('minDate', dateStr);
                         }
@@ -129,7 +129,7 @@
                         dateFormat: format,
                         minDate: minDate,
                         altInput: true,
-                        altFormat: tf_options.tf_admin_date_format,
+                        altFormat: beaf_options.tf_admin_date_format,
                         onChange: function (selectedDates, dateStr, instance) {
                             startDate.set('maxDate', dateStr);
                         }
@@ -139,7 +139,7 @@
                         dateFormat: format,
                         minDate: minDate,
                         altInput: true,
-                        altFormat: tf_options.tf_admin_date_format,
+                        altFormat: beaf_options.tf_admin_date_format,
                         mode: multiple ? 'multiple' : 'single',
                     });
                 }
@@ -382,10 +382,10 @@
         * Options ajax save
         * @author: Foysal
         */
-        $(document).on('submit', '.tf-option-form.tf-ajax-save', function (e) {
+        $(document).on('submit', '.tf-option-form.beaf-ajax-save', function (e) {
             e.preventDefault();
             let $this = $(this),
-                submitBtn = $this.find('.tf-submit-btn'),
+                submitBtn = $this.find('.beaf-submit-btn'),
                 data = new FormData(this);
             var fontsfile = $('.itinerary-fonts-file').prop("files");
             if (typeof fontsfile !== "undefined") {
@@ -393,10 +393,10 @@
                     data.append('file[]', fontsfile[i]);
                 }
             }
-            data.append('action', 'tf_options_save');
+            data.append('action', 'beaf_options_save');
 
             $.ajax({
-                url: tf_options.ajax_url,
+                url: beaf_options.ajax_url,
                 type: 'POST',
                 data: data,
                 processData: false,
@@ -462,7 +462,7 @@
                 },
                 displayEventTime: true,
                 selectable: true,
-                select: function ({start, end, startStr, endStr, allDay, jsEvent, view, resource}) {
+                select: function ({ start, end, startStr, endStr, allDay, jsEvent, view, resource }) {
                     if (moment(start).isBefore(moment(), 'day') || moment(end).isBefore(moment(), 'day')) {
                         self.fullCalendar.unselect();
                         setCheckInOut("", "", self.roomCalData);
@@ -470,14 +470,14 @@
                         var zone = moment(start).format("Z");
                         zone = zone.split(":");
                         zone = "" + parseInt(zone[0]) + ":00";
-                        var check_in = moment(start).utcOffset(zone).format(String(tf_options.tf_admin_date_format || "MM/DD/YYYY").toUpperCase());
-                        var check_out = moment(end).utcOffset(zone).subtract(1, 'day').format(String(tf_options.tf_admin_date_format || "MM/DD/YYYY").toUpperCase());
+                        var check_in = moment(start).utcOffset(zone).format(String(beaf_options.tf_admin_date_format || "MM/DD/YYYY").toUpperCase());
+                        var check_out = moment(end).utcOffset(zone).subtract(1, 'day').format(String(beaf_options.tf_admin_date_format || "MM/DD/YYYY").toUpperCase());
                         setCheckInOut(check_in, check_out, self.roomCalData);
                     }
                 },
-                events: function ({start, end, startStr, endStr, timeZone}, successCallback, failureCallback) {
+                events: function ({ start, end, startStr, endStr, timeZone }, successCallback, failureCallback) {
                     $.ajax({
-                        url: tf_options.ajax_url,
+                        url: beaf_options.ajax_url,
                         dataType: "json",
                         type: "POST",
                         data: {
@@ -488,7 +488,7 @@
                             avail_date: $(self.container).find('.avail_date').val(),
                         },
                         beforeSend: function () {
-                            $(self.container).css({'pointer-events': 'none', 'opacity': '0.5'});
+                            $(self.container).css({ 'pointer-events': 'none', 'opacity': '0.5' });
                             $(self.calendar).addClass('tf-content-loading');
                         },
                         success: function (doc) {
@@ -496,7 +496,7 @@
                                 successCallback(doc);
                             }
 
-                            $(self.container).css({'pointer-events': 'auto', 'opacity': '1'});
+                            $(self.container).css({ 'pointer-events': 'auto', 'opacity': '1' });
                             $(self.calendar).removeClass('tf-content-loading');
                         },
                         error: function (e) {
@@ -509,15 +509,15 @@
                     const eventTitleElement = document.createElement('div');
                     eventTitleElement.classList.add('fc-event-title');
                     eventTitleElement.innerHTML = title;
-                    return {domNodes: [eventTitleElement]};
+                    return { domNodes: [eventTitleElement] };
                 },
-                eventClick: function ({event, el, jsEvent, view}) {
-                    let startTime = moment(event.start, String(tf_options.tf_admin_date_format || "MM/DD/YYYY").toUpperCase())
-                        .format(String(tf_options.tf_admin_date_format || 'MM/DD/YYYY').toUpperCase());
+                eventClick: function ({ event, el, jsEvent, view }) {
+                    let startTime = moment(event.start, String(beaf_options.tf_admin_date_format || "MM/DD/YYYY").toUpperCase())
+                        .format(String(beaf_options.tf_admin_date_format || 'MM/DD/YYYY').toUpperCase());
                     let endTime;
                     if (event.end) {
-                        endTime = moment(event.end, String(tf_options.tf_admin_date_format || "MM/DD/YYYY").toUpperCase())
-                            .format(String(tf_options.tf_admin_date_format || 'MM/DD/YYYY').toUpperCase());
+                        endTime = moment(event.end, String(beaf_options.tf_admin_date_format || "MM/DD/YYYY").toUpperCase())
+                            .format(String(beaf_options.tf_admin_date_format || 'MM/DD/YYYY').toUpperCase());
                     } else {
                         endTime = startTime;
                     }
@@ -578,7 +578,7 @@
                     dateFormat: 'Y-m-d',
                     minDate: 'today',
                     altInput: true,
-                    altFormat: tf_options.tf_admin_date_format,
+                    altFormat: beaf_options.tf_admin_date_format,
                     onChange: function (selectedDates, dateStr, instance) {
                         checkOut.set('minDate', dateStr);
                     }
@@ -588,7 +588,7 @@
                     dateFormat: 'Y-m-d',
                     minDate: 'today',
                     altInput: true,
-                    altFormat: tf_options.tf_admin_date_format,
+                    altFormat: beaf_options.tf_admin_date_format,
                     onChange: function (selectedDates, dateStr, instance) {
                         checkIn.set('maxDate', dateStr);
                     }
@@ -607,16 +607,16 @@
             let data = $('input, select', container.find('.tf-room-cal-field')).serializeArray();
             let priceBy = container.closest('.tf-single-repeater-room').find('.tf_room_pricing_by').val();
             let avail_date = container.find('.avail_date');
-            data.push({name: 'action', value: 'tf_add_hotel_availability'});
-            data.push({name: 'price_by', value: priceBy});
-            data.push({name: 'avail_date', value: avail_date.val()});
+            data.push({ name: 'action', value: 'tf_add_hotel_availability' });
+            data.push({ name: 'price_by', value: priceBy });
+            data.push({ name: 'avail_date', value: avail_date.val() });
 
             $.ajax({
-                url: tf_options.ajax_url,
+                url: beaf_options.ajax_url,
                 type: 'POST',
                 data: data,
                 beforeSend: function () {
-                    container.css({'pointer-events': 'none', 'opacity': '0.5'})
+                    container.css({ 'pointer-events': 'none', 'opacity': '0.5' })
                     cal.addClass('tf-content-loading');
                     btn.addClass('tf-btn-loading');
                 },
@@ -636,19 +636,19 @@
                             notyf.error(response.data.message);
                         }
 
-                        container.css({'pointer-events': 'auto', 'opacity': '1'})
+                        container.css({ 'pointer-events': 'auto', 'opacity': '1' })
                         cal.removeClass('tf-content-loading');
                         btn.removeClass('tf-btn-loading');
                     }
                 },
                 error: function (e) {
                     console.log(e);
-                    container.css({'pointer-events': 'auto', 'opacity': '1'})
+                    container.css({ 'pointer-events': 'auto', 'opacity': '1' })
                     cal.removeClass('tf-content-loading');
                     btn.removeClass('tf-btn-loading');
                 },
                 complete: function () {
-                    container.css({'pointer-events': 'auto', 'opacity': '1'});
+                    container.css({ 'pointer-events': 'auto', 'opacity': '1' });
                     cal.removeClass('tf-content-loading');
                     btn.removeClass('tf-btn-loading');
                 },
@@ -695,7 +695,7 @@
                     toolbar2: 'styleselect,strikethrough,hr,forecolor,pastetext,removeformat,charmap,outdent,indent,undo,redo,wp_help',
                     //   textarea_rows : 20
                 },
-                quicktags: {buttons: 'strong,em,link,block,del,ins,img,ul,ol,li,code,more,close'},
+                quicktags: { buttons: 'strong,em,link,block,del,ins,img,ul,ol,li,code,more,close' },
                 mediaButtons: false,
             });
         }
@@ -1152,15 +1152,15 @@ var frame, gframe;
         // Single Image and video Upload
 
         $('body').on('click', '.tf-media-upload', function (e) {
-            var $this            = $(this);
-            var fieldname        = $(this).attr("tf-field-name");
+            var $this = $(this);
+            var fieldname = $(this).attr("tf-field-name");
             var tf_preview_class = fieldname.replace(/[.[\]_-]/g, '_');
 
             //check if it's video uploader
-            var type  = 'image';
+            var type = 'image';
             var title = 'Select Image';
-            var text  = 'Insert Image';
-            if($this.hasClass('bafg-video-upload') ){
+            var text = 'Insert Image';
+            if ($this.hasClass('bafg-video-upload')) {
                 type = 'video';
                 title = 'Select Video';
                 text = 'Insert Video';
@@ -1181,7 +1181,7 @@ var frame, gframe;
                 var attachment = frame.state().get('selection').first().toJSON();
                 $this.parent().parent().find('input').val(attachment.url);
                 $this.parent().parent().find('.tf-media-attachment-id').val(attachment.id);
-                if(!$this.hasClass('bafg-video-upload')) {
+                if (!$this.hasClass('bafg-video-upload')) {
                     $this.parent().parent().find('.tf-fieldset-media-preview').html(`<div class="tf-image-close" tf-field-name='${fieldname}'>✖</div><img src='${attachment.url}' />`);
                 }
             });
@@ -1243,7 +1243,7 @@ var frame, gframe;
             $(".tf-fieldset-media-preview").html("");
         });
 
-        if (tf_options.gmaps != "googlemap") {
+        if (beaf_options.gmaps != "googlemap") {
             $(".tf-field-map").each(function () {
                 var $this = $(this),
                     $map = $this.find('.tf--map-osm'),
@@ -1260,7 +1260,7 @@ var frame, gframe;
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(mapInit);
 
-                var mapMarker = L.marker(map_data.center, {draggable: true}).addTo(mapInit);
+                var mapMarker = L.marker(map_data.center, { draggable: true }).addTo(mapInit);
 
                 var update_latlng = function (data) {
                     $latitude.val(data.lat);
@@ -1632,189 +1632,6 @@ var frame, gframe;
 
 })(jQuery);
 
-/*
-* Author @Jahid
-* Report Chart
-*/
-
-(function ($) {
-    $(document).ready(function () {
-        if (tf_options.tf_chart_enable == 1) {
-            var ctx = document.getElementById('tf_months'); // node
-            var ctx = document.getElementById('tf_months').getContext('2d'); // 2d context
-            var ctx = $('#tf_months'); // jQuery instance
-            var ctx = 'tf_months'; // element id
-
-            var chart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-                    // Information about the dataset
-                    datasets: [{
-                        label: "Completed Booking",
-                        borderColor: '#003C79',
-                        tension: 0.1,
-                        data: tf_options.tf_complete_order,
-                        fill: false
-                    },
-                        {
-                            label: "Cancelled Booking",
-                            borderColor: 'red',
-                            tension: 0.1,
-                            data: tf_options.tf_cancel_orders,
-                            fill: false
-                        }
-                    ]
-                },
-
-                // Configuration options
-                options: {
-                    layout: {
-                        padding: 10,
-                    },
-                    legend: {
-                        display: true
-                    },
-                    title: {
-                        display: true,
-                        text: ""
-                    }
-                }
-
-            });
-        }
-
-        $(document).on('change', '#tf-month-report', function () {
-            var monthTarget = $(this).val();
-            if (monthTarget != 0) {
-                $("#tf-report-loader").addClass('show');
-                $('.tf-order-report').find('iframe').remove();
-                var yearTarget = $("#tf-year-report").val();
-                jQuery.ajax({
-                    type: 'post',
-                    url: tf_options.ajax_url,
-                    data: {
-                        action: 'tf_month_reports',
-                        month: monthTarget,
-                        year: yearTarget,
-                    },
-                    success: function (data) {
-                        var response = JSON.parse(data);
-                        var ctx = document.getElementById('tf_months'); // node
-                        var ctx = document.getElementById('tf_months').getContext('2d'); // 2d context
-                        var ctx = $('#tf_months'); // jQuery instance
-                        var ctx = 'tf_months'; // element id
-
-                        var chart = new Chart(ctx, {
-                            type: 'line',
-                            data: {
-                                labels: response.months_day_number,
-                                // Information about the dataset
-                                datasets: [{
-                                    label: "Completed Booking",
-                                    borderColor: '#003C79',
-                                    tension: 0.1,
-                                    data: response.tf_complete_orders,
-                                    fill: false
-                                },
-                                    {
-                                        label: "Cancelled Booking",
-                                        borderColor: 'red',
-                                        tension: 0.1,
-                                        data: response.tf_cancel_orders,
-                                        fill: false
-                                    }
-                                ]
-                            },
-
-                            // Configuration options
-                            options: {
-                                layout: {
-                                    padding: 10,
-                                },
-                                legend: {
-                                    display: true
-                                },
-                                title: {
-                                    display: true,
-                                    text: response.tf_search_month
-                                }
-                            }
-
-                        });
-                        $("#tf-report-loader").removeClass('show');
-                    }
-                })
-            }
-        });
-
-
-        $(document).on('change', '#tf-year-report', function () {
-            var yearTarget = $(this).val();
-            var monthTarget = $("#tf-month-report").val();
-            if (yearTarget != 0 && monthTarget != 0) {
-                $("#tf-report-loader").addClass('show');
-                $('.tf-order-report').find('iframe').remove();
-                jQuery.ajax({
-                    type: 'post',
-                    url: tf_options.ajax_url,
-                    data: {
-                        action: 'tf_month_reports',
-                        month: monthTarget,
-                        year: yearTarget,
-                    },
-                    success: function (data) {
-                        var response = JSON.parse(data);
-                        var ctx = document.getElementById('tf_months'); // node
-                        var ctx = document.getElementById('tf_months').getContext('2d'); // 2d context
-                        var ctx = $('#tf_months'); // jQuery instance
-                        var ctx = 'tf_months'; // element id
-
-                        var chart = new Chart(ctx, {
-                            type: 'line',
-                            data: {
-                                labels: response.months_day_number,
-                                // Information about the dataset
-                                datasets: [{
-                                    label: "Completed Booking",
-                                    borderColor: '#003C79',
-                                    tension: 0.1,
-                                    data: response.tf_complete_orders,
-                                    fill: false
-                                },
-                                    {
-                                        label: "Cancelled Booking",
-                                        borderColor: 'red',
-                                        tension: 0.1,
-                                        data: response.tf_cancel_orders,
-                                        fill: false
-                                    }
-                                ]
-                            },
-
-                            // Configuration options
-                            options: {
-                                layout: {
-                                    padding: 10,
-                                },
-                                legend: {
-                                    display: true
-                                },
-                                title: {
-                                    display: true,
-                                    text: response.tf_search_month
-                                }
-                            }
-
-                        });
-                        $("#tf-report-loader").removeClass('show');
-                    }
-                })
-            }
-        });
-
-    });
-})(jQuery);
 
 /**
  * Shortcode generator js
@@ -1876,7 +1693,7 @@ var frame, gframe;
         }
         //show the copied message
         $(this).parents('.tf-copy-item').append('<div><span class="tf-copied-msg">Copied<span></div>');
-        $("span.tf-copied-msg").animate({opacity: 0}, 1000, function () {
+        $("span.tf-copied-msg").animate({ opacity: 0 }, 1000, function () {
             $(this).slideUp('slow', function () {
                 $(this).remove();
             });

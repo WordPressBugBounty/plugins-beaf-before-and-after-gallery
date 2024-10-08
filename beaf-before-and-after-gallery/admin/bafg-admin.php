@@ -15,30 +15,41 @@ function bafg_admin_enqueue_scripts( $screen ) {
 	global $post_type;
 	$tf_options_screens = array(
 		'bafg_page_beaf_settings',
+		'bafg_page_bafg_gallery',
+		'bafg_page_bafg-pro-license',
 	);
 	$tf_options_post_type = array( 'bafg' );
 
 	if ( in_array( $screen, $tf_options_screens ) || in_array( $post_type, $tf_options_post_type ) ) {
 		wp_enqueue_style( 'beaf-admin-options', BEAF_ASSETS_URL . 'css/beaf-admin-options.css', array() );
+
+		wp_enqueue_script( 'beaf-options', BEAF_ASSETS_URL . 'js/beaf-options.js', array( 'jquery' ), true );
+
+		wp_localize_script( 'beaf-options', 'beaf_options', array(
+			'ajax_url' => admin_url( 'admin-ajax.php' ),
+			'nonce' => wp_create_nonce( 'beaf_option_nonce' ),
+		) );
+
+		// Enqueue styles
+		wp_enqueue_style( 'beaf-notyf', BEAF_ASSETS_URL . 'libs/notyf/notyf.min.css', array() );
+		wp_enqueue_style( 'bafg_admin_style', plugins_url( '../assets/css/bafg-admin-style.css', __FILE__ ), array() );
+
+
+		// Enqueue scripts
+		wp_enqueue_script( 'wp-color-picker-alpha', plugins_url( '../assets/js/wp-color-picker-alpha.min.js', __FILE__ ), array( 'wp-color-picker' ), true );
+		wp_enqueue_script( 'beaf-notyf', BEAF_ASSETS_URL . 'libs/notyf/notyf.min.js', array( 'jquery' ), true );
+
+		wp_enqueue_script( 'beaf-admin', plugins_url( '../assets/js/bafg-script.js', __FILE__ ), array( 'jquery', 'wp-color-picker', 'wp-color-picker-alpha' ), true );
+		wp_localize_script( 'beaf-admin', 'beaf_options', array(
+			'ajax_url' => admin_url( 'admin-ajax.php' ),
+			'nonce' => wp_create_nonce( 'beaf_options_nonce' ),
+		) );
+
+		if ( ! wp_script_is( 'jquery-ui-sortable' ) ) {
+			wp_enqueue_script( 'jquery-ui-sortable' );
+		}
+
 	}
-
-	// Enqueue styles
-	wp_enqueue_style( 'notyf', BEAF_ASSETS_URL . 'libs/notyf/notyf.min.css', array() );
-	wp_enqueue_style( 'bafg_admin_style', plugins_url( '../assets/css/bafg-admin-style.css', __FILE__ ), array() );
-
-
-	// Enqueue scripts
-	wp_enqueue_script( 'wp-color-picker-alpha', plugins_url( '../assets/js/wp-color-picker-alpha.min.js', __FILE__ ), array( 'wp-color-picker' ), true );
-	wp_enqueue_script( 'notyf', BEAF_ASSETS_URL . 'libs/notyf/notyf.min.js', array( 'jquery' ), true );
-	wp_enqueue_script( 'beaf-admin', plugins_url( '../assets/js/bafg-script.js', __FILE__ ), array( 'jquery', 'wp-color-picker', 'wp-color-picker-alpha' ), true );
-	if ( ! wp_script_is( 'jquery-ui-sortable' ) ) {
-		wp_enqueue_script( 'jquery-ui-sortable' );
-	}
-	wp_enqueue_script( 'beaf-options', BEAF_ASSETS_URL . 'js/beaf-options.js', array( 'jquery' ), true );
-	wp_localize_script( 'beaf-admin', 'tf_options', array(
-		'ajax_url' => admin_url( 'admin-ajax.php' ),
-		'nonce' => wp_create_nonce( 'tf_options_nonce' ),
-	) );
 }
 
 // admin column

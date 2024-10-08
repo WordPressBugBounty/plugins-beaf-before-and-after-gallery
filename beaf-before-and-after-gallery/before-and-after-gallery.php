@@ -3,7 +3,7 @@
  * Plugin Name: BEAF - Ultimate Before After Image Slider & Gallery
  * Plugin URI: https://themefic.com/plugins/beaf/
  * Description: Would you like to show a comparison of two images? With BEAF, you can easily create before and after image sliders or galleries. Elementor Supported.
- * Version: 4.5.24
+ * Version: 4.5.25
  * Author: Themefic
  * Author URI: https://themefic.com/
  * License: GPL-2.0+
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 //define all necessary constants
 define( 'BEAF_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
-define( 'BEAF_VERSION', '4.5.24' );
+define( 'BEAF_VERSION', '4.5.25' );
 define( 'BEAF_ADMIN_PATH', BEAF_PLUGIN_PATH . 'admin/' );
 define( 'BEAF_OPTIONS_PATH', BEAF_ADMIN_PATH . 'tf-options/' );
 //define assets url
@@ -30,7 +30,7 @@ class BAFG_Before_After_Gallery {
 	public function __construct() {
 
 		/**
-		 * Include wp plugin.php file
+		 * Include wp plugin.php file 
 		 */
 		if ( ! function_exists( 'is_plugin_active' ) ) {
 			require_once ABSPATH . 'wp-admin/includes/plugin.php';
@@ -39,14 +39,14 @@ class BAFG_Before_After_Gallery {
 		/**
 		 * Include admin function file
 		 */
-		if ( file_exists( BEAF_ADMIN_PATH . 'inc/functions.php' ) ) {
+		if ( defined('BEAF_ADMIN_PATH') && !empty(BEAF_ADMIN_PATH) ) {
 			require_once BEAF_ADMIN_PATH . 'inc/functions.php';
 		}
 
 		/**
 		 * Option framework include
 		 */
-		if ( file_exists( BEAF_OPTIONS_PATH . 'BEAF_Options.php' ) ) {
+		if ( defined('BEAF_OPTIONS_PATH') && !empty(BEAF_OPTIONS_PATH) ) {
 			require_once BEAF_OPTIONS_PATH . 'BEAF_Options.php';
 		} else {
 			self::beaf_file_missing( BEAF_OPTIONS_PATH . 'BEAF_Options.php' );
@@ -120,6 +120,33 @@ class BAFG_Before_After_Gallery {
 		 * Filter the single_template with our custom function
 		 */
 		add_filter( 'single_template', array( $this, 'bafg_custom_single_template' ) );
+
+
+		//enqueue scripts
+		add_action( 'admin_enqueue_scripts', [ $this, 'BEAF_tourfic_admin_denqueue_script' ], 20 );
+
+	}
+
+
+		/*
+	 * Admin setting option dequeue 
+	 */
+	public function BEAF_tourfic_admin_denqueue_script( $screen ) {
+		global $post_type;
+		$BEAF_options_screens = array(
+			'bafg_page_beaf_settings',
+			'bafg_page_bafg-pro-license',
+		);
+		$Beaf_options_post_type = array( 'bafg' );
+		
+		//The tourfic admin js Listings Directory Compatibility
+		if ( in_array( $screen, $BEAF_options_screens ) || in_array( $post_type, $Beaf_options_post_type ) ) {
+			wp_dequeue_style( 'tf-admin' );
+			wp_deregister_style( 'tf-admin' );
+			wp_dequeue_style( 'tf-pro' );
+			wp_dequeue_script( 'tf-pro' );
+			wp_deregister_script('tf-pro');
+		}
 
 	}
 

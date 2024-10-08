@@ -4,7 +4,7 @@ Donate link:
 Tags: before after, before after elementor, before after slider, before after gallery, before after image
 Requires at least: 4.0
 Tested up to: 6.6
-Stable tag: 4.5.24
+Stable tag: 4.5.25
 Requires PHP: 7.4
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -346,6 +346,12 @@ Yes, We provide full support on the WordPress.org forums. You can also post ques
 
 == Changelog ==
 
+= 4.5.25 – 08/10/2024 =
+
+- Improvement: Compatible Tourfic plugin
+- Improvement: Compatible UACF7 plugin
+- Minor bug fixes & improvements
+
 = 4.5.24 – 19/09/2024 =
 
 - Improvement: Options panel design
@@ -630,7 +636,7 @@ Yes, We provide full support on the WordPress.org forums. You can also post ques
 = 4.3.10 – 28/11/2022 =
 
 - Fixed: Css issue in three image addon
-- Fixed: Responive check on fullscreen option
+- Fixed: Responsive check on fullscreen option
 
 = 4.3.9 – 20/11/2022 =
 
@@ -676,7 +682,7 @@ Yes, We provide full support on the WordPress.org forums. You can also post ques
 
 = 4.3.0 – 07/19/2022 =
  
- - New feature: Added slider full screen view option
+ - New feature: Added slider full-screen view option
 
 = 4.2.8 – 07/10/2022 =
  
@@ -699,56 +705,10 @@ Yes, We provide full support on the WordPress.org forums. You can also post ques
 
 = 4.2.4 – 04/21/2022 =
  
- - Feature: 7 preview styles added for 3 Image addon(Pro)
+ - Feature: 7 preview styles added for 3 Image addons(Pro)
  - Feature: Auto slide of 3 image slider added(Pro)
- - Multiple 3 image slider in different styles are now working on same page(Pro)
- - Fixed: Some JS bug fixed and gallery CSS fixed
-
-= 4.2.2 – 03/21/2022 =
- 
- - Fixed: Minor bug
- - Feature: Fade effect preview added(Pro)
- 
-= 4.2.1 - 03/07/2022 =
-
-- Fixed css issue
-
-= 4.1.4 - 01/03/2022 =
-
-- Fixed: Image not loading issue due to Lazy Load / Cache Plugins.
-
-= 4.1.3 - 23/02/2022 =
-
-- Minor bug fixed
-
-= 4.1.2 - 22/02/2022 =
-
-- Minor bug fixed
-
-= 4.1.1 - 16/02/2022 =
-
-- Minor bug fixed
-
-= 4.1.0 - 15/02/2022 =
-
-- Minor bug fixed
-- Watermark Feature added (Pro addon required)
-
-= 4.0.2 - 26/01/2022 =
-
-- Fixed color picker issue
-- Compatiblity Check: WordPress 5.9
-
-= 4.0.1 - 25/01/2022 =
-
-- Fixed: Minor Bugs and Stylesheet.
-
-= 4.0.0 - 21/01/2022 =
-
-- Introducing: Before After Image alt tag option
-- Introducing: 3 Images Before After Slider (Pro)
-- Fixed: Minor Bugs and Stylesheet.
-- Option Panel Update
+ - Multiple 3 image sliders in different styles are now working on the same page(Pro)
+ - Fixed: Some JS bugs were fixed and gallery CSS fixed
 
 = 1.0.0 - 29/01/2020 =
 

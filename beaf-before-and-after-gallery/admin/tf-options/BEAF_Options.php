@@ -38,7 +38,7 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 		}
 
 		public function beaf_options_version() {
-			return '1.1.1';
+			return '1.1.2';
 		}
 
 		public function tf_options_file_path( $file_path = '' ) {
@@ -141,6 +141,9 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 			$tf_options_post_type = array( 'bafg' );
 			$admin_date_format_for_users = ! empty( BAFG_Before_After_Gallery::beaf_opt( "tf-date-format-for-users" ) ) ? BAFG_Before_After_Gallery::beaf_opt( "tf-date-format-for-users" ) : "Y/m/d";
 			$bafg_load_from_cdn = ! empty( BAFG_Before_After_Gallery::beaf_opt( "bafg_assets_from_cdn" ) ) ? BAFG_Before_After_Gallery::beaf_opt( "bafg_assets_from_cdn" ) : 0;
+
+
+			// var_dump( $tf_options_screens );
 
 			//Css
 			if ( in_array( $screen, $tf_options_screens ) || in_array( $post_type, $tf_options_post_type ) ) {
