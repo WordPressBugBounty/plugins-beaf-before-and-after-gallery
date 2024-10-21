@@ -3,7 +3,7 @@ Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
 Tested up to: 6.6
-Stable tag: 4.5.27
+Stable tag: 4.5.28
 Requires PHP: 7.4
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -304,32 +304,34 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Screenshots ==
 
-1. Multiple layouts (Vertical & Horizontal Demo)
-2. Gallery Generator
-3. Gallery Preview
+1. Multiple Layouts (Vertical & Horizontal)
+2. Slider Gallery Generator
+3. Gallery with Multiple Column Preview
 4. Change Before-After Label
-5. Disable Overlay
-6. Move the Slider on the Mouse Hover
-7. Change the Before-After Label Background and Color
-8. Titles, Description & Read More Button
-9. Unlimited Slider Creation
-10. Shortcode Generator
-11. Option Panel 1
-12. Option Panel 2
-13. Option Panel 3
-14. Elementor Addon
-15. Pro Features
-16. Preview Style 1 & 2
-17. Preview Style 3 & 4
-18. Preview Style 5 & 6
-19. Filterable Gallery
-20. Single Image Slider 1
-21. Single Image Slider 2
-22. Custom Width – Height – Alignment
-23. Auto Slide
-24. Before After Video Slider
+5. On Hover & Click Slider Change
+6. Slider Title, Description & Button
+7. Shortcode for All Sliders
+8. Filterable Gallery Based on Categories
+9. Dedicated Option Panel (Content Settings)
+10. Dedicated Option Panel (Control Settings)
+11. Dedicated Option Panel (Design Settings)
+12. Page Builder Support
+13. 10 Different Preview Styles (Pro)
+14. 10 Different Preview Styles (Pro)
+15. Filterable Gallery View (Pro)
+16. 3 Image Slider (Pro)
+17. Video Slider (Pro)
+18. Titles, Description & Button (Pro)
+19. 4 Different Filters (Pro)
+20. Image Watermark (Pro)
 
 == Changelog ==
+
+= 4.5.28 – 21/10/2024 =
+
+- Updated slider screenshots for ORG
+- Updated plugin banner for ORG
+- Updated readme.txt file
 
 = 4.5.27 – 17/10/2024 =
 
