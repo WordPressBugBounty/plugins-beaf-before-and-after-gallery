@@ -70,7 +70,7 @@ function bafg_slider_info( $id ) {
 			$bafg_readmore_link = ! empty( $meta['bafg_readmore_link'] ) ? $meta['bafg_readmore_link'] : '';
 			if ( trim( $bafg_readmore_link ) != '' ) :
 				?>
-				<div>
+				<div class="bafg_slider_readmore_button_wrap">
 					<?php
 					$bafg_readmore_link_target = ! empty( $meta['bafg_readmore_link_target'] ) ? $meta['bafg_readmore_link_target'] : '';
 					$bafg_pro_activated = get_option( 'bafg_pro_activated' );
@@ -165,6 +165,17 @@ function bafg_slider_info_styles( $id ) {
 				;
 			<?php endif; ?>
 		}
+		<?php if ( $bafg_slider_info_readmore_alignment == 'right' ) : ?>
+			.<?php echo esc_attr( 'slider-info-' . $id . '' ); ?>.bafg-slider-info .bafg_slider_readmore_button_wrap{
+					justify-content: end;
+				}
+		<?php endif; ?>
+
+		<?php if ( $bafg_slider_info_readmore_alignment == 'center' ) : ?>
+			.<?php echo esc_attr( 'slider-info-' . $id . '' ); ?>.bafg-slider-info .bafg_slider_readmore_button_wrap{
+					justify-content: center;
+				}
+		<?php endif; ?>
 
 		.<?php echo esc_attr( 'slider-info-' . $id . '' ); ?>.bafg-slider-info .bafg_slider_readmore_button {
 			<?php if ( $bafg_slider_info_readmore_font_size != '' ) : ?>
@@ -198,20 +209,6 @@ function bafg_slider_info_styles( $id ) {
 			<?php endif; ?>
 
 			text-align: center;
-
-			<?php if ( $bafg_slider_info_readmore_alignment == 'right' ) : ?>
-				float:
-					<?php echo esc_attr( $bafg_slider_info_readmore_alignment ); ?>
-				;
-				max-width: 200px;
-				display: block;
-			<?php endif; ?>
-
-			<?php if ( $bafg_slider_info_readmore_alignment == 'center' ) : ?>
-				margin: 10px auto;
-				max-width: 200px;
-				display: block;
-			<?php endif; ?>
 
 			<?php if ( $bafg_slider_info_readmore_button_padding_top_bottom != '' ) : ?>
 				padding-top:
@@ -257,9 +254,9 @@ function bafg_slider_info_styles( $id ) {
 				;
 			<?php endif; ?>
 
-			<?php if ( $bafg_slider_info_readmore_bg_color != '' ) : ?>
+			<?php if ( $bafg_slider_info_readmore_hover_bg_color != '' ) : ?>
 				border: 1px solid
-					<?php echo esc_attr( $bafg_slider_info_readmore_bg_color ); ?>
+					<?php echo esc_attr( $bafg_slider_info_readmore_hover_bg_color ); ?>
 				;
 			<?php endif; ?>
 		}
@@ -549,8 +546,8 @@ if ( ! function_exists( 'bafg_frontend_preview_shortcode_pro_cb' ) ) {
 		);
 
 		//define the before and after images url
-		$before_image = plugins_url( '../assets/image/before.jpg', __FILE__ );
-		$after_image = plugins_url( '../assets/image/after.jpg', __FILE__ );
+		$before_image =  BEAF_ASSETS_URL . '/image/before.jpg';
+		$after_image =  BEAF_ASSETS_URL . '/image/after.jpg';
 		?>
 		<div class="bafg-twentytwenty-container bafg-frontend-preview" bafg-overlay="yes" bafg-move-slider-on-hover="no">
 			<img class="bafg-before-prev-image" before-image-url="<?php echo esc_url( $before_image ) ?>"

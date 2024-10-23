@@ -58,7 +58,7 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 					'type' => 'switch',
 					'label' => __( 'Enable Watermark', 'bafg' ),
 					'title' => __( 'Enable Watermark', 'bafg' ),
-					'subtitle' => __( 'Enable or Disable watermark for this indiviusal slider (Page will reload to save data)', 'bafg' ),
+					'subtitle' => __( 'Enable or Disable watermark for this individual slider (Page will reload to save data)', 'bafg' ),
 					'class' => 'watermark-in-free-version',
 					'is_pro' => true,
 					'default' => true
@@ -202,6 +202,24 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 						'self' => __( 'Self Hosted', 'bafg' ),
 					),
 					'is_pro' => true,
+					'dependency' => array( 'bafg_before_after_method', '==', 'method_4' ),
+				), $post ),
+
+				apply_filters( 'bafg_video_width', array(
+					'id' => '',
+					'type' => 'text',
+					'label' => __( 'Video Width', 'bafg' ),
+					'is_pro' => true,
+					'field_width' => 50,
+					'dependency' => array( 'bafg_before_after_method', '==', 'method_4' ),
+				), $post ),
+
+				apply_filters( 'bafg_video_height', array(
+					'id' => '',
+					'type' => 'text',
+					'label' => __( 'Video Height', 'bafg' ),
+					'is_pro' => true,
+					'field_width' => 50,
 					'dependency' => array( 'bafg_before_after_method', '==', 'method_4' ),
 				), $post ),
 
@@ -622,25 +640,6 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 					'is_pro' => true,
 					'field_width' => 50,
 				), $post ),
-
-				apply_filters( 'bafg_video_width', array(
-					'id' => '',
-					'type' => 'text',
-					'label' => __( 'Video Width', 'bafg' ),
-					'is_pro' => true,
-					'field_width' => 50,
-					'dependency' => array( 'bafg_before_after_method', '==', 'method_4' ),
-				), $post ),
-
-				apply_filters( 'bafg_video_height', array(
-					'id' => '',
-					'type' => 'text',
-					'label' => __( 'Video Height', 'bafg' ),
-					'is_pro' => true,
-					'field_width' => 50,
-					'dependency' => array( 'bafg_before_after_method', '==', 'method_4' ),
-				), $post ),
-
 
 				apply_filters( 'bafg_slider_alignment', array(
 					'id' => '',
