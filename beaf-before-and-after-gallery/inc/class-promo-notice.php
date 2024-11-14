@@ -225,7 +225,7 @@ class bafg_PROMO_NOTICE {
     public function bafg_black_friday_notice_dismiss_callback() {  
 
         $bafg_promo_option = get_option( 'bafg_promo__schudle_option' );
-        $restart = isset($bafg_promo_option['dasboard_restart']) && $bafg_promo_option['dasboard_restart'] != false ? $bafg_promo_option['dasboard_restart'] : false; 
+        $restart = isset($bafg_promo_option['dashboard_banner']['restart']) && $bafg_promo_option['dashboard_banner']['restart'] != false ? $bafg_promo_option['dashboard_banner']['restart'] : false;  
         if($restart == false){
             update_option( 'bafg_dismiss_admin_notice', strtotime($bafg_promo_option['end_date']) ); 
         }else{

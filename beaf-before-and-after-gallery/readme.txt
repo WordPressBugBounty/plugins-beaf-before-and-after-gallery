@@ -3,7 +3,7 @@ Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
 Tested up to: 6.6
-Stable tag: 4.5.30
+Stable tag: 4.5.31
 Requires PHP: 7.4
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -326,6 +326,10 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 20. Image Watermark (Pro)
 
 == Changelog ==
+
+= 4.5.31 – 14/11/2024 =
+
+- Minor bug fixes & improvements
 
 = 4.5.30 – 14/11/2024 =
 
