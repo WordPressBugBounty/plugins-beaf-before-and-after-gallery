@@ -6,7 +6,7 @@ use Automattic\WooCommerce\Utilities\ArrayUtil;
 defined( 'ABSPATH' ) || exit;
 $post = get_the_ID();
 BEAF_Metabox::metabox( 'beaf_meta', array(
-	'title' => __( 'Before After Content', 'bafg' ),
+	'title' => __( 'Before After Slider Options', 'bafg' ),
 	'post_type' => 'bafg',
 	'sections' => array(
 		'content' => array(

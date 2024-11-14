@@ -587,14 +587,14 @@
 }
 
 .twentytwenty-vertical .design-1 .twentytwenty-up-arrow {
-    top: -18px !important;
-    left: -5px !important;
-    transform: rotate(0deg);
+	top: -18px !important;
+	left: -5px !important;
+	transform: rotate(0deg);
 }
 
 .twentytwenty-vertical .design-1 .twentytwenty-down-arrow {
-    top: 5px;
-    left: 2px;
+	top: 5px;
+	left: 2px;
 }
 
 .twentytwenty-vertical .design-1 .twentytwenty-handle::before,
@@ -690,10 +690,7 @@
 .bafg-col-3,
 .bafg-col-4 {
 	margin-top: 15px;
-	margin-bottom: 15px
-}
-
-.bafg-gallery-row .twentytwenty-wrapper {
+	margin-bottom: 15px;
 	padding: 0 15px;
 }
 
@@ -866,6 +863,7 @@
 	-o-transition: opacity 1s ease-in-out;
 	transition: opacity 1s ease-in-out;
 }
+
 .bafg-twentytwenty-container iframe {
 	position: absolute;
 	left: 0;
@@ -874,6 +872,7 @@
 	-o-transition: opacity 1s ease-in-out;
 	transition: opacity 1s ease-in-out;
 }
+
 .bafg-twentytwenty-container video {
 	position: absolute;
 	left: 0;

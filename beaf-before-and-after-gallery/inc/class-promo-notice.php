@@ -191,7 +191,7 @@ class bafg_PROMO_NOTICE {
                 <a href="<?php echo esc_attr( $deal_link ); ?>" style="display: block; line-height: 0;" target="_blank" >
                     <img  style="width: 100%;" src="<?php echo esc_attr($image_url) ?>" alt="">
                 </a> 
-                <?php if( isset($this->bafg_promo_option['dasboard_dismiss']) && $this->bafg_promo_option['dasboard_dismiss'] == true): ?>
+                <?php if( isset($dashboard_banner['dismiss_status']) && $dashboard_banner['dismiss_status'] == true): ?>
                 <button type="button" class="notice-dismiss bafg_black_friday_notice_dismiss"><span class="screen-reader-text"><?php echo esc_html(__('Dismiss this notice.', 'bafg' )) ?></span></button>
                 <?php  endif; ?>
             </div>
