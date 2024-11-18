@@ -24,10 +24,10 @@ class bafg_widget extends WP_Widget {
  
     public function widget( $args, $instance ) {
  
-        echo esc_html($args['before_widget']);
+        echo wp_kses_post($args['before_widget']);
  
         if ( ! empty( $instance['title'] ) ) {
-            echo esc_html($args['before_title']) . esc_html(apply_filters( 'widget_title', $instance['title'] )) . esc_html($args['after_title']);
+            echo wp_kses_post($args['before_title']) . esc_html(apply_filters( 'widget_title', $instance['title'] )) . wp_kses_post($args['after_title']);
         }
  
         echo '<div class="textwidget">';
@@ -42,8 +42,7 @@ class bafg_widget extends WP_Widget {
 		}
  
         echo '</div>';
- 
-        echo esc_html($args['after_widget']);
+        echo wp_kses_post($args['after_widget']);
  
     }
  
