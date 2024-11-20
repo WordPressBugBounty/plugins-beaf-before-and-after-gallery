@@ -2,8 +2,8 @@
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
+Stable tag: 4.5.34
 Tested up to: 6.7
-Stable tag: 4.5.33
 Requires PHP: 7.4
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -233,10 +233,11 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 
 ###  Our Plugins
 
-* [Travel and Hotel Booking Solution for WooCommerce – Tourfic](https://wordpress.org/plugins/tourfic/)
+* [Tourfic – Ultimate Hotel Booking, Travel Booking & Apartment Booking WordPress Plugin](https://wordpress.org/plugins/tourfic)
 * [Ultimate Addons For Contact Form 7](https://wordpress.org/plugins/ultimate-addons-for-contact-form-7/)
 * [Onepage / Direct Checkout for WooCommerce - Instantio](https://wordpress.org/plugins/instantio)
 * [Before After Image Slider for WooCommerce – eBEAF](https://wordpress.org/plugins/before-after-for-woocommerce)
+* [Hydra Booking – All in One Appointment Scheduling and Booking Calendar Solution](https://wordpress.org/plugins/hydra-booking)
 
 == Installation ==
 
@@ -326,6 +327,10 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 20. Image Watermark (Pro)
 
 == Changelog ==
+
+= 4.5.34 – 20/11/2024 =
+
+- Update: Revised and updated the plugin's Readme.txt file information.
 
 = 4.5.33 – 18/11/2024 =
 
