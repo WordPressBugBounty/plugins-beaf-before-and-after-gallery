@@ -760,7 +760,7 @@
 	background: unset;
 }
 
-.bafg-twentytwenty-container:not([data-video-type]) {
+.bafg-twentytwenty-container {
 	position: relative;
 	max-width: unset !important;
 }
@@ -912,10 +912,4 @@ div#bafg_popup_wrap .bafg-preloader {
 .bafg-twentytwenty-container img {
 	margin: 0;
 	width: 100%;
-}
-
-pre {
-	background-color: #030466;
-	color: #45ff45;
-	padding: 20px;
 }

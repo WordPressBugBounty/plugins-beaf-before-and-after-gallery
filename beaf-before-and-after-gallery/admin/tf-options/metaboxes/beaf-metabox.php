@@ -60,7 +60,6 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 					'title' => __( 'Enable Watermark', 'bafg' ),
 					'subtitle' => __( 'Enable or Disable watermark for this individual slider (Page will reload to save data)', 'bafg' ),
 					'class' => 'watermark-in-free-version',
-					'dependency' => array( 'bafg_before_after_method', '!=', 'method_4' ),
 					'is_pro' => true,
 					'default' => true
 				), $post ),
@@ -508,15 +507,7 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 					'is_pro' => true,
 					'field_width' => 50,
 				), $post ),
-				array(
-					'id' => 'bafg_both_video_play',
-					'type' => 'switch',
-					'label' => __( 'Play Both Videos On Slide', 'bafg' ),
-					'default' => false,
-					'subtitle' => __( 'Plays both before after videos on slide togather.', 'bafg' ),
-					'class' => 'bafg-both-video-play',
-					'field_width' => 50,
-				),
+
 				apply_filters( 'bafg_on_scroll_slide', array(
 					'id' => '',
 					'type' => 'switch',
@@ -639,7 +630,6 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 					'type' => 'text',
 					'label' => __( 'Slider Width', 'bafg' ),
 					'is_pro' => true,
-					'placeholder' => __( 'e.g:640px|%', 'bafg' ),
 					'field_width' => 50,
 				), $post ),
 
@@ -648,7 +638,6 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 					'type' => 'text',
 					'label' => __( 'Slider Height', 'bafg' ),
 					'is_pro' => true,
-					'placeholder' => __( 'e.g:340px|%', 'bafg' ),
 					'field_width' => 50,
 				), $post ),
 
@@ -762,21 +751,21 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 					'id' => 'bafg_slider_info_readmore_font_size',
 					'type' => 'text',
 					'label' => __( 'Font Size', 'bafg' ),
-					'placeholder' => 'eg.14px',
+					'placeholder' => 'eg. 14px',
 					'field_width' => 33,
 				),
 				array(
 					'id' => 'bafg_slider_info_readmore_button_padding_top_bottom',
 					'type' => 'text',
 					'label' => __( 'Padding Top Bottom', 'bafg' ),
-					'placeholder' => 'eg.14px',
+					'placeholder' => 'eg. 14px',
 					'field_width' => 33,
 				),
 				array(
 					'id' => 'bafg_slider_info_readmore_button_padding_left_right',
 					'type' => 'text',
 					'label' => __( 'Padding Left Right', 'bafg' ),
-					'placeholder' => 'eg.14px',
+					'placeholder' => 'eg. 14px',
 					'field_width' => 33,
 				),
 				//border radius
@@ -784,7 +773,7 @@ BEAF_Metabox::metabox( 'beaf_meta', array(
 					'id' => 'bafg_slider_info_readmore_border_radius',
 					'type' => 'text',
 					'label' => __( 'Border Radius', 'bafg' ),
-					'placeholder' => 'eg.14px',
+					'placeholder' => 'eg. 14px',
 					'field_width' => 33,
 				),
 				//button width

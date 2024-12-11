@@ -28,16 +28,9 @@
 		<label for="bafg_gallery_item"><?php echo esc_html__( 'Max Items:', 'bafg' ); ?></label>
 		<input id="bafg_gallery_item" type="text" value="" placeholder="Unlimited">
 		
-		<label for="bafg_gallery_info" class="bafg_gallery_info">
-			<input id="bafg_gallery_info" type="checkbox" <?php echo esc_attr(apply_filters('bafg_gallery_info_attrs','disabled')); ?> >
-			<?php echo esc_html__( 'Display Slider Title, Description and Read more link', 'bafg' ); ?>
-			<?php if(! class_exists('BAFG_Before_After_Gallery_Pro') || BEAF_PRO_LICENSE_STATUS != 'activate') { ?>
-				<div class="bafg-tooltip">
-					<span>?</span>
-					<div class="bafg-tooltip-info">Pro feature!</div>
-				</div>
-			<?php } ?>
-		</label>
+		<label for="bafg_gallery_info" class="bafg_gallery_info"><input id="bafg_gallery_info" type="checkbox" <?php echo esc_attr(apply_filters('bafg_gallery_info_attrs','disabled')); ?> > <?php echo esc_html__( 'Display Slider Title, Description and Read more link', 'bafg' ); ?><div class="bafg-tooltip"><span>?</span>
+                        <div class="bafg-tooltip-info">Pro feature!</div>
+                    </div></label>
 		
 		<input id="bafg_gallery_shortcode_generator" class="button button-primary" type="submit" value="Generate Shortcode">
 

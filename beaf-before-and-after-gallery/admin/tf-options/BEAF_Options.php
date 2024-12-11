@@ -139,8 +139,8 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 				'bafg_page_beaf_settings',
 			);
 			$tf_options_post_type = array( 'bafg' );
-			$admin_date_format_for_users = ! empty( Hook::beaf_opt( "tf-date-format-for-users" ) ) ? Hook::beaf_opt( "tf-date-format-for-users" ) : "Y/m/d";
-			$bafg_load_from_cdn = ! empty( Hook::beaf_opt( "bafg_assets_from_cdn" ) ) ? Hook::beaf_opt( "bafg_assets_from_cdn" ) : 0;
+			$admin_date_format_for_users = ! empty( BAFG_Before_After_Gallery::beaf_opt( "tf-date-format-for-users" ) ) ? BAFG_Before_After_Gallery::beaf_opt( "tf-date-format-for-users" ) : "Y/m/d";
+			$bafg_load_from_cdn = ! empty( BAFG_Before_After_Gallery::beaf_opt( "bafg_assets_from_cdn" ) ) ? BAFG_Before_After_Gallery::beaf_opt( "bafg_assets_from_cdn" ) : 0;
 
 
 			// var_dump( $tf_options_screens );
@@ -169,7 +169,7 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 
 			//Js
 			if ( in_array( $screen, $tf_options_screens ) || in_array( $post_type, $tf_options_post_type ) ) {
-				$bafg_load_from_cdn = ! empty( Hook::beaf_opt( "bafg_assets_from_cdn" ) ) ? Hook::beaf_opt( "bafg_assets_from_cdn" ) : 0;
+				$bafg_load_from_cdn = ! empty( BAFG_Before_After_Gallery::beaf_opt( "bafg_assets_from_cdn" ) ) ? BAFG_Before_After_Gallery::beaf_opt( "bafg_assets_from_cdn" ) : 0;
 
 				wp_enqueue_script( 'wp-color-picker' );
 
@@ -184,7 +184,7 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 
 
 
-				$tf_google_map = function_exists( 'is_tf_pro' ) && is_tf_pro() && ! empty( Hook::beaf_opt( 'google-page-option' ) ) ? Hook::beaf_opt( 'google-page-option' ) : "false";
+				$tf_google_map = function_exists( 'is_tf_pro' ) && is_tf_pro() && ! empty( BAFG_Before_After_Gallery::beaf_opt( 'google-page-option' ) ) ? BAFG_Before_After_Gallery::beaf_opt( 'google-page-option' ) : "false";
 
 				if ( $tf_google_map != true ) {
 					if ( $bafg_load_from_cdn == 1 ) {
@@ -204,7 +204,7 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 				wp_enqueue_editor();
 			}
 
-			$tf_google_map = function_exists( 'is_tf_pro' ) && is_tf_pro() && ! empty( Hook::beaf_opt( 'google-page-option' ) ) ? Hook::beaf_opt( 'google-page-option' ) : "false";
+			$tf_google_map = function_exists( 'is_tf_pro' ) && is_tf_pro() && ! empty( BAFG_Before_After_Gallery::beaf_opt( 'google-page-option' ) ) ? BAFG_Before_After_Gallery::beaf_opt( 'google-page-option' ) : "false";
 
 		}
 
@@ -225,7 +225,7 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 		 * @author M Hemel Hasan
 		 */
 		public function tf_options_wp_enqueue_scripts() {
-			$bafg_load_from_cdn = ! empty( Hook::beaf_opt( "bafg_assets_from_cdn" ) ) ? Hook::beaf_opt( "bafg_assets_from_cdn" ) : 0;
+			$bafg_load_from_cdn = ! empty( BAFG_Before_After_Gallery::beaf_opt( "bafg_assets_from_cdn" ) ) ? BAFG_Before_After_Gallery::beaf_opt( "bafg_assets_from_cdn" ) : 0;
 			if ( $bafg_load_from_cdn == 1 ) {
 				wp_enqueue_style( 'tf-fontawesome-4', '//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css', array(), $this->beaf_options_version() );
 				wp_enqueue_style( 'tf-fontawesome-5', '//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css', array(), $this->beaf_options_version() );
