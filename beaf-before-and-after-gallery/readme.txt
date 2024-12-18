@@ -2,7 +2,7 @@
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
-Stable tag: 4.6.1
+Stable tag: 4.6.2
 Tested up to: 6.7
 Requires PHP: 7.4
 License: GPL-2.0+
@@ -45,11 +45,12 @@ BEAF also provides premium, high-quality features to help you present your Befor
 * On Scroll Slider (Pro)
 * Change Read More text (Pro)
 * Disable slider handle (Pro)
+* Uploaded Before After Image Preview Without Login(Pro)
 
 **Demo Link**
 > [Check out the demo](https://themefic.com/plugins/beaf) to see it in action!
 
-With this Before After WordPress plugin, You can showcase your portfolio by comparing two before and after images.
+With this Before After WordPress plugin, You can showcase your portfolio by comparing two before and after images. 
 
 **Pro Version**
 
@@ -102,11 +103,11 @@ You can easily change the color and background of each Label. [Click here](https
 
 You can disable the overlay from the options panel. [Click here](https://themefic.com/plugins/beaf/#no-overlay) for a quick preview.
 
-= Mouse Hover =
+= Mouse Hover = 
 
 You can move slider on Mouse hover. [Click here](https://themefic.com/plugins/beaf/#mouse-hover) for a quick preview.
 
-= Image Alt tag =
+= Image Alt tag = 
 
 You can add Alt tag on each images for Better SEO.
 
@@ -177,7 +178,7 @@ The Pro version includes all the features of the Free version (as described abov
 
 The Pro version includes 10 Additional Awesome looking Preview Styles. [Click here](https://themefic.com/plugins/beaf/pro/preview-styles) for a quick preview.
 
-= Filterable Before - After Gallery =
+= Filterable Before - After Gallery = 
 
 Create 2 Columns, 3 Columns and 4 Columns Filterable Before After Gallery in WordPress with BEAF Pro. The galleries can be combination of all the above mentioned Preview Styles & Single Image Styles. The color and padding of the filters can be edited from the options panel. [Click here](https://themefic.com/plugins/beaf/pro/filterable-gallery/) for a quick preview.
 
@@ -185,7 +186,7 @@ Create 2 Columns, 3 Columns and 4 Columns Filterable Before After Gallery in Wor
 
 Create slider with 3 images. [Click here](https://themefic.com/plugins/beaf/pro/3-images-slider/) for a quick preview.
 
-= Before After Video Slider =
+= Before After Video Slider = 
 
 Create slider with 2 different videos. [Click here](https://themefic.com/plugins/beaf/pro/video-slider/) for a quick preview.
 
@@ -197,7 +198,7 @@ Create slider with Watermark in Images. Fully Customizable based on available op
 
 Create slider using a single image. The Single image has filter effects like [Grayscale](https://themefic.com/plugins/beaf/pro/before-after-with-single-image/#grayscale), [Blur](https://themefic.com/plugins/beaf/pro/before-after-with-single-image/#blur), [Saturate](https://themefic.com/plugins/beaf/pro/before-after-with-single-image/#saturate), [Sepia](https://themefic.com/plugins/beaf/pro/before-after-with-single-image/#sepia) etc. The filter can be added on Before or After image.
 
-= Titles, Description & Read More Button on Single Image =
+= Titles, Description & Read More Button on Single Image = 
 
 You can add Title, Description & Read More button on [Single Image Slider](https://themefic.com/plugins/beaf/pro/before-after-with-single-image/#title), [Normal Gallery](https://themefic.com/plugins/beaf/pro/before-after-with-single-image/#image-gallery) and [Filterable Gallery](https://themefic.com/plugins/beaf/pro/before-after-with-single-image/#filterable-gallery).
 
@@ -213,7 +214,7 @@ Slider will slide automatically. Options to add Pause on hover. [Click here](htt
 
 Slider will slide on Scroll (based on User Scrolling). [Click here](https://themefic.com/plugins/beaf/pro/on-scroll-slider/) for a quick preview.
 
-= Disable slider handle =
+= Disable slider handle = 
 
 You can easily disable the slider handle. [Click here](https://themefic.com/plugins/pro/common-options/#disable) for a quick preview.
 
@@ -328,9 +329,22 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Changelog ==
 
+= 4.6.2 – 18/12/2024 =
+
+- Added: Double video playback settings are now available for the Video Slider.
+- Improved: Overall Assets management has been improved for better performance
+- Improved: BEAF is rebuilt into a class component for better performance.
+- Improved: The watermark addon for the BEAF plugin improved performance.
+- Improved: The video slider addon improved for better performance.
+- Improved: The 3-image slider addon improved for better performance.
+- Fixed: "Read More" button alignment issues are now resolved.
+- Fixed: The BEAF gallery generator issues have been resolved.
+- Fixed: Minor bugs and issues are now resolved.
+- System stability: Improved for smoother performance overall.
+
 = 4.6.1 – 11/12/2024 =
 
-- Updated readme.txt
+- Minor bug fixes & improvements
 
 = 4.6.0 – 10/12/2024 =
 
@@ -357,7 +371,7 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 = 4.5.30 – 14/11/2024 =
 
 - Minor bug fixes & improvements
-- System stability improved
+- System stability improved 
 
 = 4.5.29 – 23/10/2024 =
 
@@ -375,11 +389,11 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 = 4.5.27 – 17/10/2024 =
 
-- Updated readme.txt
+- Updated readme.txt 
 
 = 4.5.26 – 17/10/2024 =
 
-- Updated readme.txt
+- Updated readme.txt 
 - Minor bug fixes & improvements
 
 = 4.5.25 – 08/10/2024 =
@@ -395,7 +409,7 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 = 4.5.23 – 18/09/2024 =
 
-- Info: Banner info updated
+- Info: Banner info updated 
 - System stability improved
 
 = 4.5.22 – 15/09/2024 =
@@ -408,88 +422,6 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 - Fixed: Beaf Settings panel saving issue
 - Improvement: System stability improved
-
-= 4.5.20 – 10/09/2024 =
-
-- System stability improved
-- Minor bug fixes & improvements
-
-= 4.5.19 – 18/08/2024 =
-
-- Fixed: Color picker issue
-
-= 4.5.18 – 15/08/2024 =
-
-- Fixed: Meta field not found issue.
-- System stability improved.
-
-= 4.5.17 – 13/08/2024 =
-
-- Improvement: Compatible with Tourfic
-- Improvement: Compatible with UACF7
-
-= 4.5.16 – 28/07/2024 =
-
-- Improvement: Reorganized CSS/JS Code
-- System stability improved
-
-= 4.5.15 – 17/07/2024 =
-
-- Compatible with WordPress 6.6
-- System stability improved
-
-= 4.5.14 – 11/07/2024 =
-
-- Improvement: System stability improved
-- Fixed: Notice banner issue
-
-= 4.5.13 – 04/07/2024 =
-
-- Improvement: System stability improved
-- Fixed: escaping and text-domain issue
-- Fixed: Minor Bugs fixed
-
-= 4.5.12 – 02/07/2024 =
-
-- Compatibility: Compatible with WordPress 6.5.5
-- Improvement: System stability improved
-- Minor bug fixes and improvements
-
-= 4.5.11 – 12/06/2024 =
-
-- Compatibility: Compatible with WordPress 6.5.4
-- Improvement: Removed unused scripts
-- Improvement: Optimized code and performance
-- Improvement: System stability improved
-- Minor bug fixes and improvements
-
-= 4.5.10 – 03/06/2024 =
-
-- Improvement: System stability Improved
-- Minor bug fixes & improvements
-
-= 4.5.9 – 22/05/2024 =
-
-- Fixed: Before-after slider handle issue
-- Fixed: Responsive issue for 2-image slider
-
-= 4.5.8 – 28/04/2024 =
-
-- Fixed: Minor Bugs
-
-= 4.5.7 – 03/04/2024 =
-
-- Compatibility: Compatible with WordPress 6.5
-- Minor bug fixes & improvements
-
-= 4.5.6 – 15/03/2024 =
-
-- Fixed: Updated Security issues
-- Fixed: Console Error
-- Optimized: Organized and Optimized Code
-- Updated: Escaped Security patches
-- Improvement: System stability Improved
-- Added: Disclaimer for Patchstack VDP
 
 = Changelog Between 2020 - 2023 =
 Find them [here](https://themefic.com/plugins/beaf/#changelogs).

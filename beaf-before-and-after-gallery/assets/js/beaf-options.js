@@ -1700,6 +1700,29 @@ var frame, gframe;
         });
     });
 
+    /**
+     * Both Video Play Toogle Dependency
+     * @author Jewel Hossain
+     * @since 4.5.29
+    */
+    jQuery(document).ready(function($) {
+        function toggleBothVideoPlay() {
+            var methodValue = $('input[name="beaf_meta[bafg_before_after_method]"]:checked').val();
+            var videoPlayField = $('.bafg-both-video-play');
+    
+            if (methodValue === 'method_4') {
+                videoPlayField.show();
+            } else {
+                videoPlayField.hide();
+            }
+        }
+    
+        toggleBothVideoPlay();
+    
+        $('input[name="beaf_meta[bafg_before_after_method]"]').change(function() {
+            toggleBothVideoPlay();
+        });
+    });
 
 })(jQuery);
 

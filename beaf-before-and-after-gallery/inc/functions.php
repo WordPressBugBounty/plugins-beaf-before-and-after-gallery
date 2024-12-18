@@ -3,10 +3,12 @@
 
 // Beaf Plugins Print_r
 if ( ! function_exists( 'beaf_print_r' ) ) {
-	function beaf_print_r( $value ) {
-		echo '<pre>';
-		print_r( $value );
-		echo '</pre>';
+	function beaf_print_r( ...$args ) {
+		foreach($args as $value){
+			echo '<pre>';
+			print_r( $value );
+			echo '</pre>';
+		}
 
 	}
 }
@@ -21,7 +23,7 @@ if ( file_exists( __DIR__ . '/class-promo-notice.php' ) ) {
 	require_once( 'class-promo-notice.php' );
 }
 
-// inclue plugin.php file
+// include plugin.php file
 
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
@@ -167,13 +169,16 @@ function bafg_slider_info_styles( $id ) {
 		}
 		<?php if ( $bafg_slider_info_readmore_alignment == 'right' ) : ?>
 			.<?php echo esc_attr( 'slider-info-' . $id . '' ); ?>.bafg-slider-info .bafg_slider_readmore_button_wrap{
+					display: flex;
 					justify-content: end;
 				}
 		<?php endif; ?>
 
 		<?php if ( $bafg_slider_info_readmore_alignment == 'center' ) : ?>
 			.<?php echo esc_attr( 'slider-info-' . $id . '' ); ?>.bafg-slider-info .bafg_slider_readmore_button_wrap{
+					display: flex;
 					justify-content: center;
+
 				}
 		<?php endif; ?>
 
@@ -523,57 +528,6 @@ if ( ! function_exists( 'bafg_pro_version_notice' ) ) {
  * 
  */
 $beaf_pro_license_status = get_option( 'beaf_pro_license_status' );
-/**
- * Register shortcode for bafg_preview.
- *
- * @param array $atts The shortcode attributes.
- * @return string The shortcode output.
- * 
- * @author Abu Hena
- */
-if ( ! function_exists( 'bafg_frontend_preview_shortcode_pro_cb' ) ) {
-	function bafg_frontend_preview_shortcode_pro_cb( $atts ) {
-
-		ob_start();
-		//extract the shortcode attributes
-		extract(
-			shortcode_atts(
-				array(
-					'id' => '',
-				),
-				$atts
-			)
-		);
-
-		//define the before and after images url
-		$before_image =  BEAF_ASSETS_URL . '/image/before.jpg';
-		$after_image =  BEAF_ASSETS_URL . '/image/after.jpg';
-		?>
-		<div class="bafg-twentytwenty-container bafg-frontend-preview" bafg-overlay="yes" bafg-move-slider-on-hover="no">
-			<img class="bafg-before-prev-image" before-image-url="<?php echo esc_url( $before_image ) ?>"
-				src="<?php echo esc_url( $before_image ) ?>">
-			<img class="bafg-after-prev-image" after-image-url="<?php echo esc_url( $after_image ) ?>"
-				src="<?php echo esc_url( $after_image ) ?>">
-		</div>
-		<div class="bafg-frontend-upload-buttons">
-			<div class="bafg-bimage-up">
-				<label><?php echo esc_html( __( "Upload Before Image", "bafg" ) ); ?></label>
-				<input type="file" name="" id="bafg-before-image" class="upload-before-image" accept="image/*">
-			</div>
-			<div class="bafg-aimage-up">
-				<label><?php echo esc_html( __( "Upload After Image", "bafg" ) ); ?></label>
-				<input type="file" name="" id="bafg-after-image" class="upload-after-image" accept="image/*">
-			</div>
-			<div class="bafg-reset-preview">
-				<button class="bafg-reset-preview-btn"><?php echo esc_html( __( "Reset", "bafg" ) ); ?></button>
-			</div>
-		</div>
-		<?php
-
-		return ob_get_clean();
-	}
-	add_shortcode( 'bafg_preview', 'bafg_frontend_preview_shortcode_pro_cb' );
-}
 
 if ( ! function_exists( 'bafg_before_after_method' ) ) {
 	add_filter( 'beaf_before_after_method', 'bafg_before_after_method', 30, 2 );
@@ -664,6 +618,7 @@ if ( ! function_exists( 'bafg_after_image_link_cb' ) ) {
 		return $options;
 	}
 }
+
 //bafg_readmore_text
 if ( ! function_exists( 'bafg_readmore_text_cb' ) ) {
 	add_filter( 'bafg_readmore_text', 'bafg_readmore_text_cb', 30 );
@@ -1224,6 +1179,26 @@ if ( ! function_exists( 'bafg_watermark_position_cb' ) ) {
 		);
 
 		if ( ! is_plugin_active( 'watermark-addon-for-beaf/watermark-addon-for-beaf.php' ) ) {
+			$options = $options;
+		} else {
+			if ( is_array( $options ) ) {
+				$options = array_merge( $options, $pro_options );
+			}
+		}
+
+		return $options;
+	}
+}
+
+if ( ! function_exists( 'bafg_bafg_preview_shortcode_cb' ) ) {
+	add_filter( 'bafg_bafg_preview_shortcode', 'bafg_bafg_preview_shortcode_cb', 40 );
+	function bafg_bafg_preview_shortcode_cb( $options ) {
+		$pro_options = array(
+			'id' => 'bafg_before_after_shortcode',
+			'is_pro' => false
+		);
+
+		if ( ! is_plugin_active( 'beaf-before-and-after-gallery-pro/before-and-after-gallery-pro.php' ) ) {
 			$options = $options;
 		} else {
 			if ( is_array( $options ) ) {
