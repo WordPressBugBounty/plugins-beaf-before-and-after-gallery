@@ -2,7 +2,7 @@
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
-Stable tag: 4.6.2
+Stable tag: 4.6.3
 Tested up to: 6.7
 Requires PHP: 7.4
 License: GPL-2.0+
@@ -14,10 +14,12 @@ Need a Before After Image Comparison slider? Create your before and after slider
 
 = The Easiest and Best Before After Image Slider & Gallery Plugin for WordPress =
 
-👉 Official Demo Link: [BEAF Live Preview](https://themefic.com/plugins/beaf)
-👉 BEAF Pro Version: [Check Pro](https://themefic.com/plugins/beaf/pro)
-👉 Documentation: [Written Installation Guide](https://themefic.com/docs/beaf)
+👉 Official Demo Link: [BEAF Live Preview](https://themefic.com/plugins/beaf/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=demo_link)
+👉 Explore Pro: [Play with Backend Options](https://themefic.com/plugins/beaf/pro/backend-demo/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=pro_backend)
+👉 BEAF Pro Version: [Check Pro](https://themefic.com/plugins/beaf/pro/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=pro_link)
+👉 Documentation: [Written Installation Guide](https://themefic.com/docs/beaf/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=plugin_docs)
 👉 Video Guide: [Complete Step by Step Guide](https://www.youtube.com/playlist?list=PLY0rtvOwg0ynodV0sVmSRX1OPCSs9mzhz)
+👉 Get Support: [Click Here](https://portal.themefic.com/support/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=plugin_support)
 👉 Join Our FB Community: [BEAF Facebook Group](https://facebook.com/groups/beaf.wp)
 
 Looking for a powerful WordPress Before and After Slider & Gallery plugin? Want to create WordPress Image Comparisons slider with ease? Look no further than BEAF, the Ultimate Before and After WordPress Plugin. With BEAF, you can effortlessly create stunning Before After image comparison slider for elementor, gutenberg, bricks, wp bakery or any page builder or block editor. The best part? You can add an unlimited number of sliders and galleries to your WordPress site—for free!
@@ -48,13 +50,13 @@ BEAF also provides premium, high-quality features to help you present your Befor
 * Uploaded Before After Image Preview Without Login(Pro)
 
 **Demo Link**
-> [Check out the demo](https://themefic.com/plugins/beaf) to see it in action!
+> [Check out the demo](https://themefic.com/plugins/beaf/?utm_source=wp_readme&utm_medium=beaf_bottom_slot&utm_campaign=demo_link) to see it in action!
 
 With this Before After WordPress plugin, You can showcase your portfolio by comparing two before and after images. 
 
 **Pro Version**
 
-> [Check BEAF Pro](https://themefic.com/plugins/beaf/pro)
+> [Check BEAF Pro](https://themefic.com/plugins/beaf/pro/?utm_source=wp_readme&utm_medium=beaf_bottom_slot&utm_campaign=demo_link)
 
 We believe the free version is good enough for most businesses. However, we have a **Pro version** of this plugin which has more advanced features including **10 Awesome looking Preview Styles, Before-After with Single Image, 3 Images comparison slider, Before After Video Slider, Multi-Columns Filterable Gallery, Auto Slide, On Scroll Slide** and many more.
 
@@ -236,9 +238,13 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 
 * [Tourfic – Ultimate Hotel Booking, Travel Booking & Apartment Booking WordPress Plugin](https://wordpress.org/plugins/tourfic)
 * [Ultimate Addons For Contact Form 7](https://wordpress.org/plugins/ultimate-addons-for-contact-form-7/)
-* [Onepage / Direct Checkout for WooCommerce - Instantio](https://wordpress.org/plugins/instantio)
-* [Before After Image Slider for WooCommerce – eBEAF](https://wordpress.org/plugins/before-after-for-woocommerce)
+* [Instantio – WooCommerce Quick Checkout | Floating Cart, Side Cart & Popup Cart](https://wordpress.org/plugins/instantio)
 * [Hydra Booking – All in One Appointment Scheduling and Booking Calendar Solution](https://wordpress.org/plugins/hydra-booking)
+
+###  Our Themes
+
+* [Travelfic – Ultimate Travel Booking WordPress Theme](https://wordpress.org/themes/travelfic/)
+* [Ultimate Hotel Booking WordPress Theme](https://wordpress.org/themes/ultimate-hotel-booking/)
 
 == Installation ==
 
@@ -329,6 +335,11 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Changelog ==
 
+= 4.6.3 – 30/12/2024 =
+
+- Updated: Readme.txt file and plugin information.
+- Compatibility: Fully compatible with WordPress 6.7.1.
+
 = 4.6.2 – 18/12/2024 =
 
 - Added: Double video playback settings are now available for the Video Slider.
@@ -386,42 +397,6 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 - Updated slider screenshots for ORG
 - Updated plugin banner for ORG
 - Updated readme.txt file
-
-= 4.5.27 – 17/10/2024 =
-
-- Updated readme.txt 
-
-= 4.5.26 – 17/10/2024 =
-
-- Updated readme.txt 
-- Minor bug fixes & improvements
-
-= 4.5.25 – 08/10/2024 =
-
-- Improvement: Compatible Tourfic plugin
-- Improvement: Compatible UACF7 plugin
-- Minor bug fixes & improvements
-
-= 4.5.24 – 19/09/2024 =
-
-- Improvement: Options panel design
-- Minor bug fixes & improvements
-
-= 4.5.23 – 18/09/2024 =
-
-- Info: Banner info updated 
-- System stability improved
-
-= 4.5.22 – 15/09/2024 =
-
-- Improvement: Before After Image Link
-- Improvement: Before After Image Overlay
-- Minor bug fixes & improvements
-
-= 4.5.21 – 12/09/2024 =
-
-- Fixed: Beaf Settings panel saving issue
-- Improvement: System stability improved
 
 = Changelog Between 2020 - 2023 =
 Find them [here](https://themefic.com/plugins/beaf/#changelogs).
