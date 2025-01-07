@@ -264,3 +264,7 @@ pre {
 	color: #45ff45;
 	padding: 20px;
 }
+
+.tf-field-heading.tf-depend-hidden[data-controller="bafg_auto_slide"] {
+	background: none;
+}

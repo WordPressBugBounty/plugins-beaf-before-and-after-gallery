@@ -2,7 +2,7 @@
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
-Stable tag: 4.6.3
+Stable tag: 4.6.4
 Tested up to: 6.7
 Requires PHP: 7.4
 License: GPL-2.0+
@@ -334,6 +334,10 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 20. Image Watermark (Pro)
 
 == Changelog ==
+
+= 4.6.4 – 07/01/2025 =
+
+- Added: Dependency notice for "Auto Slider" and "Click to Move" functionality.
 
 = 4.6.3 – 30/12/2024 =
 
