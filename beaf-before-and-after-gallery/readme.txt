@@ -2,7 +2,7 @@
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
-Stable tag: 4.6.4
+Stable tag: 4.6.5
 Tested up to: 6.7
 Requires PHP: 7.4
 License: GPL-2.0+
@@ -335,6 +335,12 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Changelog ==
 
+= 4.6.5 – 19/01/2025 =
+
+- Fixed: Minor bug fixes & improvements.
+- Improved: System stability improved.
+- Compatibility: Compatible with Contact Form 7 (v6.0.3)
+
 = 4.6.4 – 07/01/2025 =
 
 - Added: Dependency notice for "Auto Slider" and "Click to Move" functionality.
@@ -395,12 +401,6 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 - Improvement: Added Readmore Button Border Color
 - Fixed: Before/After preview image issue without login.
 - Fixed: On-click shortcode copy.
-
-= 4.5.28 – 21/10/2024 =
-
-- Updated slider screenshots for ORG
-- Updated plugin banner for ORG
-- Updated readme.txt file
 
 = Changelog Between 2020 - 2023 =
 Find them [here](https://themefic.com/plugins/beaf/#changelogs).
