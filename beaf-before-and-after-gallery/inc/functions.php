@@ -384,6 +384,7 @@ if ( ! function_exists( 'bafg_review_notice' ) ) {
 						data = {
 							action: 'bafg_review_notice_callback',
 							status: status,
+							nonce: '<?php echo wp_create_nonce( 'bafg_review_notice_nonce' ); ?>'
 						};
 
 						$.ajax({
@@ -420,6 +421,10 @@ add_action( 'wp_ajax_bafg_review_notice_callback', 'bafg_review_notice_callback'
 if ( ! function_exists( 'bafg_review_notice_callback' ) ) {
 	function bafg_review_notice_callback() {
 		// nonce validation
+		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'bafg_review_notice_nonce' ) ) {
+			wp_die();
+		}
+		
 		$status = esc_html( $_POST['status'] );
 		if ( $status == 'already' ) {
 			update_option( 'bafg_review_notice_status', '1' );

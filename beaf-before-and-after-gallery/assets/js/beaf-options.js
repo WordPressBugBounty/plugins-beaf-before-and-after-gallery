@@ -384,16 +384,22 @@
         */
         $(document).on('submit', '.tf-option-form.beaf-ajax-save', function (e) {
             e.preventDefault();
+
             let $this = $(this),
                 submitBtn = $this.find('.beaf-submit-btn'),
                 data = new FormData(this);
+            
             var fontsfile = $('.itinerary-fonts-file').prop("files");
+
             if (typeof fontsfile !== "undefined") {
                 for (var i = 0; i < fontsfile.length; i++) {
                     data.append('file[]', fontsfile[i]);
                 }
             }
-            data.append('action', 'beaf_options_save');
+
+            // ✅ 
+            data.append('action', 'beaf_options_save'); 
+            data.append('nonce', beaf_options.nonce);
 
             $.ajax({
                 url: beaf_options.ajax_url,
@@ -405,14 +411,20 @@
                     submitBtn.addClass('tf-btn-loading');
                 },
                 success: function (response) {
-                    let obj = JSON.parse(response);
+                    let obj;
+                    try {
+                        obj = JSON.parse(response);
+                    } catch (e) {
+                        console.error('Invalid JSON response:', response);
+                        return;
+                    }
+            
                     if (obj.status === 'success') {
                         notyf.success(obj.message);
                     } else {
                         notyf.error(obj.message);
                     }
                     submitBtn.removeClass('tf-btn-loading');
-
                 },
                 error: function (error) {
                     console.log(error);

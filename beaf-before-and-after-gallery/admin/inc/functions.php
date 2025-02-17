@@ -54,9 +54,6 @@ function beaf_dashboard_header() {
 
 /**
  * Migrate all the existing data to new data format like options, meta data
- * 
- * @param $post_id
- * @param $post
  * @since 4.0.0
  * 
  * @author Abu Hena

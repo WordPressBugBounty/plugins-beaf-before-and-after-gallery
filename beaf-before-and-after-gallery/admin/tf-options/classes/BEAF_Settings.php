@@ -320,6 +320,11 @@ if ( ! class_exists( 'BEAF_Settings' ) ) {
 		 * @author Foysal
 		 */
 		public function beaf_ajax_save_options() {
+			// Check if the request is valid.
+			if ( ! check_ajax_referer( 'beaf_option_nonce_action', 'beaf_option_nonce' ) ) {
+				wp_send_json_error( __( 'Invalid request!', 'bafg' ) );
+			}
+			
 			$response = [ 
 				'status' => 'error',
 				'message' => __( 'Something went wrong!', 'bafg' ),

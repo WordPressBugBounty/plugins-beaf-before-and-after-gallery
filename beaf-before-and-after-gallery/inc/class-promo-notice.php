@@ -201,6 +201,7 @@ class bafg_PROMO_NOTICE {
                         jQuery('.bafg_black_friday_20222_admin_notice').css('display', 'none')
                         data = {
                             action : 'bafg_black_friday_notice_dismiss_callback',
+                            nonce : '<?php echo wp_create_nonce('bafg_black_friday_notice_dismiss_callback'); ?>'
                         };
 
                         $.ajax({
@@ -222,7 +223,10 @@ class bafg_PROMO_NOTICE {
     } 
 
 
-    public function bafg_black_friday_notice_dismiss_callback() {  
+    public function bafg_black_friday_notice_dismiss_callback() {
+        if ( ! check_ajax_referer( 'bafg_black_friday_notice_dismiss_callback', 'nonce', false ) ) {
+            wp_die();
+        }
 
         $bafg_promo_option = get_option( 'bafg_promo__schudle_option' );
         $restart = isset($bafg_promo_option['dashboard_banner']['restart']) && $bafg_promo_option['dashboard_banner']['restart'] != false ? $bafg_promo_option['dashboard_banner']['restart'] : false;  
@@ -304,7 +308,8 @@ class bafg_PROMO_NOTICE {
                 $(document).on('click', '.bafg_friday_notice_dismiss', function( event ) { 
                     jQuery('.bafg-bf-preview').css('display', 'none');
                     data = {
-                        action : 'bafg_black_friday_notice_bafg_dismiss_callback', 
+                        action : 'bafg_black_friday_notice_bafg_dismiss_callback',
+                        nonce : '<?php echo wp_create_nonce('bafg_black_friday_notice_bafg_dismiss_callback'); ?>' 
                     };
 
                     $.ajax({
