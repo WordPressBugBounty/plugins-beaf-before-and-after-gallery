@@ -85,24 +85,6 @@ class BAFG_Slider extends Widget_Base {
 	 */
 	protected function _register_controls() {
         
-        function get_bafg_list(){
-            $options = array();
-
-            $bafg_list = get_posts(array(
-                'post_type' => 'bafg',
-                'showposts' => 999,
-            ));
-            $options[0] = esc_html__('Select a Slider', 'bafg');
-            if (!empty($bafg_list) && !is_wp_error($bafg_list)) {
-                foreach ($bafg_list as $post) {
-                    $options[$post->ID] = $post->post_title;
-                }
-            } else {
-                $options[0] = esc_html__('Create a Slide First', 'bafg');
-            }
-            return $options;
-        }
-        
 		$this->start_controls_section(
 			'section_content',
 			[
@@ -115,7 +97,7 @@ class BAFG_Slider extends Widget_Base {
 			[
 				'label' => __( 'Select slider', 'bafg' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => get_bafg_list(),
+				'options' => $this->get_bafg_list(),
 			]
 		);
 
@@ -144,6 +126,24 @@ class BAFG_Slider extends Widget_Base {
         </script>
         <?php
         }
+	}
+
+	public function get_bafg_list(){
+		$options = array();
+
+		$bafg_list = get_posts(array(
+			'post_type' => 'bafg',
+			'showposts' => 999,
+		));
+		$options[0] = esc_html__('Select a Slider', 'bafg');
+		if (!empty($bafg_list) && !is_wp_error($bafg_list)) {
+			foreach ($bafg_list as $post) {
+				$options[$post->ID] = $post->post_title;
+			}
+		} else {
+			$options[0] = esc_html__('Create a Slide First', 'bafg');
+		}
+		return $options;
 	}
 
 }
