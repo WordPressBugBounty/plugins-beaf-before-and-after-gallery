@@ -56,8 +56,7 @@ class bafg_PROMO_NOTICE {
 
             if(get_option( 'bafg_promo__schudle_option' )){
                 $this->bafg_promo_option = get_option( 'bafg_promo__schudle_option' );
-            } 
-             
+            }
 
             $dashboard_banner = isset($this->bafg_promo_option['dashboard_banner']) ? $this->bafg_promo_option['dashboard_banner'] : '';
 
