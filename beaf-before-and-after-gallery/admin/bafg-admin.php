@@ -84,6 +84,11 @@ class BAFG_Options {
 				'nonce' => wp_create_nonce( 'beaf_options_nonce' ),
 			) );
 
+			wp_localize_script('beaf-admin', 'beaf_admin_data', [
+				'beaf_nonce' => wp_create_nonce('beaf_admin_nonce'),
+				'themefic_nonce' => wp_create_nonce('themefic_plugin_nonce'),
+			]);
+
 			if ( ! wp_script_is( 'jquery-ui-sortable' ) ) {
 				wp_enqueue_script( 'jquery-ui-sortable' );
 			}
