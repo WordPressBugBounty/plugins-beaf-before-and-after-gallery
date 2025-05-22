@@ -33,8 +33,14 @@ class bafg_widget extends WP_Widget {
         echo '<div class="textwidget">';
  		
 		if( !empty($instance['bafg_shortcode']) ) {
-			
-			echo do_shortcode( $instance['bafg_shortcode'] );
+			 $shortcode = trim( $instance['bafg_shortcode'] );
+
+            // Allow only shortcodes, no HTML
+            if ( preg_match( '/^\[\s*(\w+)([^\]]*)\]$/', $shortcode ) ) {
+                echo do_shortcode( $shortcode );
+            } else {
+                echo esc_html( $shortcode );
+            }
 			
 		}else {
 			

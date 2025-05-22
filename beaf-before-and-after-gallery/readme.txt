@@ -2,7 +2,7 @@
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
-Stable tag: 4.7.0
+Stable tag: 4.7.1
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL-2.0+
@@ -240,6 +240,7 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 * [Ultimate Addons For Contact Form 7](https://wordpress.org/plugins/ultimate-addons-for-contact-form-7/)
 * [Instantio – WooCommerce Quick Checkout | Floating Cart, Side Cart & Popup Cart](https://wordpress.org/plugins/instantio)
 * [Hydra Booking – All in One Appointment Scheduling and Booking Calendar Solution](https://wordpress.org/plugins/hydra-booking)
+* [Reviewfic – The Ultimate Testimonial Slider, Carousel, Grid Plugin](https://wordpress.org/plugins/reviewfic/)
 
 ###  Our Themes
 
@@ -334,6 +335,10 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 20. Image Watermark (Pro)
 
 == Changelog ==
+
+= 4.7.1 – 22/05/2025 =
+
+- Improved: Security Vulnerability and System stability
 
 = 4.7.0 – 20/05/2025 =
 
