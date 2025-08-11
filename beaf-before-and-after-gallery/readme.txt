@@ -2,7 +2,7 @@
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
-Stable tag: 4.7.4
+Stable tag: 4.7.5
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPL-2.0+
@@ -19,7 +19,8 @@ Need a Before After Image Comparison slider? Create your before and after slider
 👉 BEAF Pro Version: [Check Pro](https://themefic.com/plugins/beaf/pro/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=pro_link)
 👉 Documentation: [Written Installation Guide](https://themefic.com/docs/beaf/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=plugin_docs)
 👉 Video Guide: [Complete Step by Step Guide](https://www.youtube.com/playlist?list=PLY0rtvOwg0ynodV0sVmSRX1OPCSs9mzhz)
-👉 Join Our [Community](https://community.themefic.com/feed/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=plugin_community)
+👉 Get Support: [Click Here](https://portal.themefic.com/support/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=plugin_support)
+👉 Join Our FB Community: [BEAF Facebook Group](https://facebook.com/groups/beaf.wp)
 
 Looking for a powerful WordPress Before and After Slider & Gallery plugin? Want to create WordPress Image Comparisons slider with ease? Look no further than BEAF, the Ultimate Before and After WordPress Plugin. With BEAF, you can effortlessly create stunning Before After image comparison slider for elementor, gutenberg, bricks, wp bakery or any page builder or block editor. The best part? You can add an unlimited number of sliders and galleries to your WordPress site—for free!
 
@@ -221,7 +222,7 @@ You can easily disable the slider handle. [Click here](https://themefic.com/plug
 
 ### Our Support
 
-Yes, we provide full support on the WordPress.org forums & [Our Website](https://portal.themefic.com/support/). You can also Join Our [Community](https://community.themefic.com/feed/?utm_source=wp_readme&utm_medium=beaf_top_slot&utm_campaign=plugin_community) to stay informed with the latest news and updates.  Check our [Support Policy](https://themefic.com/support-policy/).
+Yes, we provide full support on the WordPress.org forums & [Our Website](https://portal.themefic.com/support/). You can also join our [BEAF Facebook Group](https://facebook.com/groups/beaf.wp) to stay informed with latest news and updatesc.  Check our [Support Policy](https://themefic.com/support-policy/).
 
 ### Privacy Policy
 Ultimate Before After Image Slider & Gallery – BEAF uses [Appsero](https://appsero.com/) SDK to collect some telemetry data. Appsero SDK does not gather any data by default. The SDK only starts gathering basic telemetry data when a user allows it via the admin notice. Appsero SDK DOES NOT IMMEDIATELY start gathering data, without confirmation from users in any case. We use this data to troubleshoot problems faster, make product improvements & ensure a great user experience for all our users.
@@ -335,11 +336,15 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Changelog ==
 
+= 4.7.5 – 11/08/2025 =
+
+- Fixed: readme.txt file updated.
+
 = 4.7.4 – 10/08/2025 =
 
-- Updated: Community platform for the plugin.
+- Fixed: readme.txt file updated.
 
-= 4.7.3 – 01/07/2025 =
+= 4.7.3 – 01/08/2025 =
 
 - Fixed: Undefined array key “content” issue resolved.
 
