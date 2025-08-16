@@ -14,12 +14,17 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 		public static function instance() {
 			if ( self::$instance == null ) {
 				self::$instance = new self;
+				self::$instance->init();
 			}
 
 			return self::$instance;
 		}
 
 		public function __construct() {
+			
+		}
+
+		public function init() {
 			//load files
 			$this->load_files();
 
@@ -364,5 +369,3 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 
 	}
 }
-
-BEAF_Options::instance();
