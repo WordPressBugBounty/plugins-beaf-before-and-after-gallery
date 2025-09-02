@@ -30,6 +30,16 @@ class Hook {
 			}
 		}, 5 );
 
+		/*
+		 * Require function file
+		 */
+		add_action( 'admin_init', function() {
+
+			require_once( BEAF_PLUGIN_PATH . 'inc/functions.php' );
+
+		}, 5 );
+
+
 		/**
 		 * Option framework — IMPORTANT:
 		 * Include and instantiate ONLY after init so its constructor
