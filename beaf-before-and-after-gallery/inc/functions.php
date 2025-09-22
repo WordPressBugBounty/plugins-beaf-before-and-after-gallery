@@ -18,9 +18,8 @@ if ( ! function_exists( 'beaf_print_r' ) ) {
  */
 
 //Require ultimate Promo Notice
-if ( file_exists( __DIR__ . '/class-promo-notice.php' ) ) {
-	
-	require_once( 'class-promo-notice.php' );
+if ( file_exists( __DIR__ . '/class-sidebar-banner.php' ) ) {
+	require_once( 'class-sidebar-banner.php' );
 }
 
 //Require ultimate Promo Notice

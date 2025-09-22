@@ -2,7 +2,7 @@
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 4.0
-Stable tag: 4.7.7
+Stable tag: 4.7.8
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPLv2 or later
@@ -336,6 +336,11 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Changelog ==
 
+= 4.7.8 – 22/09/2025 =
+
+- Fixed: Helper banner issue has been resolved.
+- Fixed: Gallery label issue has been resolved.
+
 = 4.7.7 – 02/09/2025 =
 
 - Improved: System stability improved.
@@ -375,25 +380,6 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 = 4.6.12 – 18/05/2025 =
 
 - Improved: Security has been enhanced to address vulnerabilities.
-- Improved: System stability improved.
-
-= 4.6.11 – 29/04/2025 =
-
-- Improved: Security has been enhanced to address vulnerabilities.
-- Fixed: The 3-image slider overlay issue has been resolved.
-
-= 4.6.10 – 16/04/2025 =
-
-- Compatibility: Fully compatible with WordPress version 6.8.
-
-= 4.6.9 – 10/04/2025 =
-
-- Fixed: The Elementor widget issue has been resolved.
-
-= 4.6.8 – 18/03/2025 =
-
-- Compatibility: Compatible with Elementor (v3.28.0).
-- Fixed: Minor bug fixes & improvements.
 - Improved: System stability improved.
 
 = Changelog Between 2020 - 2023 =

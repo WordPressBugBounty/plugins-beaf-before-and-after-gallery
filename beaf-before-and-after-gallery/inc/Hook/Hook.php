@@ -30,15 +30,6 @@ class Hook {
 			}
 		}, 5 );
 
-		/*
-		 * Require function file
-		 */
-		add_action( 'admin_init', function() {
-
-			require_once( BEAF_PLUGIN_PATH . 'inc/functions.php' );
-
-		}, 5 );
-
 
 		/**
 		 * Option framework — IMPORTANT:
@@ -111,6 +102,15 @@ class Hook {
 		if ( is_admin() ) {
 			require_once( BEAF_PLUGIN_PATH . 'admin/bafg-admin.php' );
 		}
+
+		/*
+		 * Require function file
+		 */
+		add_action( 'init', function() {
+
+			require_once( BEAF_PLUGIN_PATH . 'inc/functions.php' );
+
+		}, 99 );
 
 		/**
 		 * Elementor integration — include after init as well.
