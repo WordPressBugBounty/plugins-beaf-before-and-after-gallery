@@ -444,40 +444,6 @@ if ( ! function_exists( 'bafg_review_notice_callback' ) ) {
 	}
 }
 
-
-/**
- * Initialize the plugin tracker
- *
- * @return void
- */
-if ( ! function_exists( 'appsero_init_tracker_beaf_before_and_after_gallery' ) ) {
-	/* 
-	 * Initialize the appsero
-	 */
-
-	function appsero_init_tracker_beaf_before_and_after_gallery() {
-
-		if ( ! class_exists( 'Appsero\Client' ) ) {
-			require_once( plugin_dir_path( __DIR__ ) . '/inc/app/src/Client.php' );
-		}
-
-		$client = new Appsero\Client( 'daee3b5d-d8a3-46f0-ae49-7b6f869f4b42', 'Ultimate Before After Image Slider & Gallery – BEAF', __FILE__ );
-
-		// Change Admin notice text
-
-		$notice = sprintf( $client->__trans( 'Want to help make <strong>%1$s</strong> even more awesome? Allow %1$s to collect non-sensitive diagnostic data and usage information. I agree to get Important Product Updates & Discount related information on my email from  %1$s (I can unsubscribe anytime).' ), $client->name );
-		$client->insights()->notice( $notice );
-
-
-		// Active insights
-		$client->insights()->init();
-
-	}
-	appsero_init_tracker_beaf_before_and_after_gallery();
-}
-
-
-
 /**
  * Admin notice if using older version BEAF PRO
  * @since 4.3.24
