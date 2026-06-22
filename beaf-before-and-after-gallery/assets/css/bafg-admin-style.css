@@ -805,3 +805,183 @@ pre {
     }
 }
 
+/*
+* Dashboard promo banner notice
+*/
+
+.uapwf-admin-notice-wrap.notice {
+	margin: 0;
+	padding: 0;
+	border-left: 0;
+	margin: 15px 0;
+}
+
+.uapwf-admin-notice-wrap .uapwf-promo-banner {
+	margin: 0;
+	max-width: none;
+}
+
+.beaf-dashboard-promo-banner-header {
+    margin-bottom:24px;
+    max-width:1631px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}
+
+.beaf-promo-banner{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    position:relative;
+    padding: 12px 16px 12px 24px;
+    border:1px solid transparent;
+    border-radius:8px;
+    min-height:96px;
+    box-sizing:border-box;
+    background: 
+        linear-gradient(90deg, #DEF6BD 0%, var(--Color-Fill-White, #FFF) 50%, #DEFEE0 100%) padding-box,
+        linear-gradient(to right, #6CA22A 0%, #FFF 50%, #6CA22A 100%) border-box;
+}
+
+.beaf-promo-close {
+    position: absolute;
+    top: -8PX;
+    left: -8px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    color: #888;
+    background: #fff;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.beaf-promo-icon{
+    flex:0 0 70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.beaf-promo-content{
+    flex:1;
+    text-align:center;
+}
+
+.beaf-promo-content h3{
+    margin:0;
+    font-size:20px;
+    font-weight:700;
+    color:#2c2c2c;
+    text-align: center;
+    font-family: "Figtree", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+    background: linear-gradient(90deg, var(--Color-Text-Title, #2C3E25) 0%, #613F00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.beaf-sidebar-promo-header .beaf-promo-content h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.beaf-promo-content p{
+    margin:4px 0 0;
+    font-size:14px;
+    color: var(--Color-Text-Paragraph, #2C3E25);
+    text-align: center;
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.beaf-sidebar-promo-header .beaf-promo-content p {
+    color: var(--color-text-muted, #6B7280);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.beaf-promo-action{
+    flex:0 0 auto;
+}
+
+.beaf-promo-action .button {
+    font-family: "Figtree", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 150%;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    background: var(--Color-Primary-Default, #6CA22A );
+    transition: background-color 0.3s ease;
+}
+
+.beaf-promo-action .button .buy-now-text {
+    display: inline-block;
+}
+
+.beaf-promo-action .button .arrow-icon {
+    display: none;
+}
+
+.beaf-sidebar-promo-header .beaf-promo-action .button .arrow-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.beaf-sidebar-promo-header .beaf-promo-action .button .arrow-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.beaf-sidebar-promo-header .beaf-promo-icon {
+	width: 44px;
+	aspect-ratio: 11/13;
+}
+
+.beaf-sidebar-promo-header .beaf-promo-action .button .buy-now-text {
+    display: none;
+}
+
+.beaf-sidebar-promo-header .beaf-promo-action .button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+@media (max-width:768px){
+
+    .beaf-promo-banner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .beaf-promo-content{
+        text-align:center;
+    }
+}

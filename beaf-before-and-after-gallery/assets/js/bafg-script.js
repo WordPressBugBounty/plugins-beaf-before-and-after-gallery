@@ -524,3 +524,31 @@ jQuery(document).ready(function($) {
         });
     });
 });
+
+
+
+jQuery(function ($) {
+
+    $(document).on(
+        'click',
+        '.beaf-promo-close',
+        function () {
+
+            const $banner = $(this).closest(
+                '.beaf-promo-banner'
+            );
+
+            $.post(
+                beafPromo.ajaxurl,
+                {
+                    action: 'beaf_dismiss_promo_notice',
+                    nonce: beafPromo.nonce
+                },
+                function () {
+                    $banner.slideUp(200);
+                }
+            );
+        }
+    );
+    
+});

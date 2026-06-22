@@ -32,6 +32,10 @@ if ( file_exists( BEAF_INC_PATH . 'class-helper-banner.php' ) ) {
 	require_once ( BEAF_INC_PATH .'class-helper-banner.php');
 }
 
+if ( file_exists( BEAF_INC_PATH . 'dashboard-promo-notice.php' ) ) {
+	require_once ( BEAF_INC_PATH .'dashboard-promo-notice.php');
+}
+
 // include plugin.php file
 
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -1259,4 +1263,16 @@ if ( ! function_exists( 'bafg_watermark_enable_field_meta_cb' ) ) {
 
 		return $options;
 	}
+}
+
+function beaf_utm_generator( $url, $utm_params = array() ) {
+	$host_url = parse_url( get_site_url(), PHP_URL_HOST );
+	$utm_params = array_merge( array(
+		'utm_source'   => 'beaf_' . $host_url,
+		'utm_medium'   => 'plugin',
+		'utm_campaign' => 'beaf_plugin_installation',
+	), $utm_params );
+
+	$query_string = http_build_query( $utm_params );
+	return esc_url( $url . ( strpos( $url, '?' ) === false ? '?' : '&' ) . $query_string );
 }
