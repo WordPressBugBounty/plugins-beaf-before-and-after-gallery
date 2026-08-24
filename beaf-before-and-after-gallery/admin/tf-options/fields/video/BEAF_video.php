@@ -17,7 +17,7 @@ if ( ! class_exists( 'BEAF_video' ) ) {
 
 			echo '</div>
 			<div class="tf-fieldset-media">
-			<input type="text" name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '" /><a href="#" tf-field-name="' . esc_attr( $this->field_name() ) . '" class="tf-media-upload button button-primary button-large bafg-video-upload">' . esc_html( "Upload Video", "bafg" ) . '</a></div>
+			<input type="text" name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '" /><a href="#" tf-field-name="' . esc_attr( $this->field_name() ) . '" class="tf-media-upload button button-primary button-large bafg-video-upload">' . esc_html( "Upload Video", "beaf-before-and-after-gallery" ) . '</a></div>
 			<input type="hidden" name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '"  />';
 		}
 

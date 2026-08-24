@@ -11,7 +11,7 @@ if ( ! class_exists( 'BEAF_textarea' ) ) {
 
 		public function render() {
 			$placeholder = ( ! empty( $this->field['placeholder'] ) ) ? 'placeholder="' . $this->field['placeholder'] . '"' : '';
-			echo '<textarea name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '"' . esc_attr( $placeholder ) . ' ' . esc_attr( $this->field_attributes() ) . '>' . esc_attr( $this->value ) . '</textarea>';
+			echo '<textarea name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '"' . wp_kses_post( $placeholder ) . ' ' . esc_attr( $this->field_attributes() ) . '>' . esc_attr( $this->value ) . '</textarea>';
 		}
 
 	}

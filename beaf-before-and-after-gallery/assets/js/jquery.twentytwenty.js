@@ -19,25 +19,32 @@
       var beforeDirection   = (sliderOrientation === 'vertical') ? 'down' : 'left';
       var afterDirection    = (sliderOrientation === 'vertical') ? 'up' : 'right';
 
+      var createLabel = function(className, content) {
+        var safeContent = (content === null || typeof content === 'undefined') ? '' : String(content);
+
+        return $('<div>').addClass(className).attr('data-content', safeContent);
+      };
+
       container.wrap("<div class='twentytwenty-wrapper bafg-twentytwenty-wrapper twentytwenty-" + sliderOrientation + "'></div>");
       if(!options.no_overlay) {
         container.append("<div class='twentytwenty-overlay'></div>");
         var overlay = container.find(".twentytwenty-overlay");
 
         /* Prepend Overlay Label outside of image */
-        var labelOutside = $('.bafg-twentytwenty-container').data('label_outside');
+        var labelOutside = container.data('label_outside');
         if(labelOutside == true && sliderOrientation == 'vertical' ){
-          var bafgWrapper = $(".twentytwenty-wrapper");
+          var bafgWrapper = container.closest(".twentytwenty-wrapper");
           bafgWrapper.wrap("<div class='bafg-outside-label-wrapper twentytwenty-" + sliderOrientation + "'></div>");
-          var outsideLabel = $(".bafg-outside-label-wrapper");
-          outsideLabel.prepend("<div class='twentytwenty-after-label' data-content='"+options.after_label+"'></div>");
-          outsideLabel.prepend("<div class='twentytwenty-before-label' data-content='"+options.before_label+"'></div>");
+          var outsideLabel = bafgWrapper.parent(".bafg-outside-label-wrapper");
+          outsideLabel.prepend(createLabel('twentytwenty-after-label', options.after_label));
+          outsideLabel.prepend(createLabel('twentytwenty-before-label', options.before_label));
         }
         /* Prepend Overlay Label outside of image end */
 
-        overlay.append("<div class='twentytwenty-before-label' data-content='"+options.before_label+"'></div>");
-        overlay.append("<div class='twentytwenty-after-label' data-content='"+options.after_label+"'></div>");
+        overlay.append(createLabel('twentytwenty-before-label', options.before_label));
+        overlay.append(createLabel('twentytwenty-after-label', options.after_label));
       }
+      
       var beforeImg = container.find("img:first");
       var afterImg  = container.find("img:last");
       

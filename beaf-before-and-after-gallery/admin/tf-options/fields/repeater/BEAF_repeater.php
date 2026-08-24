@@ -38,7 +38,7 @@ if ( ! class_exists( 'BEAF_Repeater' ) ) {
 									$tf_repater_default_value = $value['title'];
 								}
 								if ( $this->field['id'] == "amenities" ) {
-									$tf_repater_default_value = __( 'Amenity', 'bafg' );
+									$tf_repater_default_value = __( 'Amenity', 'beaf-before-and-after-gallery' );
 								}
 								?>
 								<div class="tf-single-repeater tf-single-repeater-<?php echo esc_attr( $this->field['id'] ); ?>">
@@ -50,7 +50,7 @@ if ( ! class_exists( 'BEAF_Repeater' ) ) {
 											<i class="fa-solid fa-angle-down"></i>
 										</span>
 										<span
-											class="tf-repeater-title"><?php echo ! empty( $tf_repater_default_value ) && gettype( $tf_repater_default_value ) == "string" ? esc_attr( $tf_repater_default_value ) : esc_html__( $label, 'bafg' ) ?>
+											class="tf-repeater-title"><?php echo ! empty( $tf_repater_default_value ) && gettype( $tf_repater_default_value ) == "string" ? esc_attr( $tf_repater_default_value ) : esc_html( $label) ?>
 										</span>
 										<div class="tf-repeater-icon-absulate">
 											<span class="tf-repeater-icon tf-repeater-icon-move">

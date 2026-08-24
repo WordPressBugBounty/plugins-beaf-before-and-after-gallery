@@ -1,0 +1,1429 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BEAF - Ultimate Before After Image Slider & Gallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-15 05:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.8; wp-7.0.4; php-8.3.11\n"
+"X-Domain: beaf-before-and-after-gallery"
+
+#: admin/tf-options/options/beaf-settings.php:47
+msgid " Enable before after image link"
+msgstr ""
+
+#: inc/functions.php:337
+msgid " Ok, you deserve it!"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:15
+msgid "-Select category-"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:31
+#: inc/templates/bafg-gallery-generator.php:78
+msgid "2 Columns"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:32
+#: inc/templates/bafg-gallery-generator.php:79
+msgid "3 Columns"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:33
+#: inc/templates/bafg-gallery-generator.php:80
+msgid "4 Columns"
+msgstr ""
+
+#. %1$: $bafg_pro_version,  %2$: $wp_version,  %3$: link,
+#: inc/functions.php:496
+msgid ""
+"<b>Warning:</b> The installed version of BEAF Pro (%1$) has not been tested "
+"on your version of WordPress (%2$). It has been tested up to version 5.9. <a "
+"href=\"%3$\" target=\"_blank\">You should update BEAF Pro to latest version "
+"to make sure that you have a version that has been tested for compatibility."
+"</a>"
+msgstr ""
+
+#: admin/tf-options/fields/gallery/BEAF_gallery.php:29
+msgid "Add Gallery"
+msgstr ""
+
+#: inc/Hook/PostType.php:25
+msgid "Add New"
+msgstr ""
+
+#: inc/Hook/PostType.php:56
+msgid "Add New Item"
+msgstr ""
+
+#: inc/Hook/PostType.php:26
+msgid "Add New Slider"
+msgstr ""
+
+#: inc/Hook/PostType.php:61
+msgid "Add or remove items"
+msgstr ""
+
+#: inc/Hook/Shortcode.php:94
+msgid "After"
+msgstr ""
+
+#: admin/bafg-admin.php:121 admin/tf-options/metaboxes/beaf-metabox.php:112
+#: admin/tf-options/metaboxes/beaf-metabox.php:118
+#: admin/tf-options/metaboxes/beaf-metabox.php:372
+msgid "After Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:125
+msgid "After Image Alter text"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:132
+msgid "After Image link"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:488
+msgid "After Label"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:615
+msgid "After Label Background"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:621
+msgid "After Label Color"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:296
+msgid "After Self Hosted Video"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:297
+msgid "After Self Hosted Video URL"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:243
+msgid "After Video"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:244
+msgid "After Video URL"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:269
+msgid "After Vimeo Video"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:270
+msgid "After Vimeo Video URL"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:696
+#: admin/tf-options/metaboxes/beaf-metabox.php:726
+#: admin/tf-options/metaboxes/beaf-metabox.php:817
+msgid "Alignment"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:129
+msgid "Alignment:"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:16
+#: inc/templates/bafg-gallery-generator.php:63
+msgid "All"
+msgstr ""
+
+#: inc/Hook/PostType.php:52
+msgid "All Items"
+msgstr ""
+
+#: inc/dashboard-promo-notice.php:278
+msgid "All PRO features included."
+msgstr ""
+
+#: inc/Hook/PostType.php:30
+msgid "All Sliders"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:118
+msgid "All the available shortcodes"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:562
+msgid ""
+"Allow a user to click (or tap) anywhere on the image to move the slider to "
+"that location."
+msgstr ""
+
+#: admin/tf-options/fields/repeater/BEAF_repeater.php:41
+msgid "Amenity"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:367
+msgid "Apply Filter For"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:505
+msgid "Auto Slide"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:763
+msgid "Background Color"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:113
+#: inc/templates/bafg-gallery-generator.php:121
+msgid "Background Color:"
+msgstr ""
+
+#. Name of the plugin
+msgid "BEAF - Ultimate Before After Image Slider & Gallery"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:104
+msgid "BEAF Filter Buttons Style"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:59
+msgid "BEAF Filterable Gallery"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:11
+msgid "BEAF Gallery"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:24
+msgid "BEAF Overview"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:67
+msgid "BEAF Settings"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:110
+msgid "Beaf Settings"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:11
+msgid "Beaf Settings "
+msgstr ""
+
+#: inc/bafg-elementor/widgets/bafg-slider.php:36
+msgid "BEAF Slider"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:398
+msgid "BEAF template style"
+msgstr ""
+
+#: inc/Hook/PostType.php:23 inc/Hook/PostType.php:24
+msgctxt "beaf-before-and-after-gallery"
+msgid "Before and After Slider"
+msgstr ""
+
+#: inc/Hook/Shortcode.php:93
+msgid "Before"
+msgstr ""
+
+#: admin/bafg-admin.php:257
+msgid "Before After for WooCommerce"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:70
+#: admin/tf-options/metaboxes/beaf-metabox.php:76
+msgid "Before After Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:20
+#: admin/tf-options/metaboxes/beaf-metabox.php:21
+msgid "Before After Method"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:9
+msgid "Before After Slider Options"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:130
+msgid "Before After Slider: All the Amazing Features, But Now with Video"
+msgstr ""
+
+#: admin/bafg-admin.php:119 admin/tf-options/metaboxes/beaf-metabox.php:84
+#: admin/tf-options/metaboxes/beaf-metabox.php:90
+#: admin/tf-options/metaboxes/beaf-metabox.php:371
+msgid "Before Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:97
+msgid "Before Image Alter text"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:104
+msgid "Before Image link"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:471
+msgid "Before Label"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:603
+msgid "Before Label Background"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:609
+msgid "Before Label Color"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:282
+msgid "Before Self Hosted Video"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:283
+msgid "Before Self Hosted Video URL"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:230
+msgid "Before Video"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:231
+msgid "Before Video URL"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:256
+msgid "Before Vimeo Video"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:257
+msgid "Before Vimeo Video URL"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:145
+msgid "Blog"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:355
+msgid "Blur"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:798
+msgid "Border Radius"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:105
+msgid "Border Radius(px):"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:806
+msgid "Button Width"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:149 inc/dashboard-promo-notice.php:293
+msgid "Buy Now"
+msgstr ""
+
+#: inc/Hook/PostType.php:51
+msgid "Category"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:13
+#: inc/templates/bafg-gallery-generator.php:61
+msgid "Category:"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:133
+msgid "Center"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:102
+msgid "Check More Features"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:22
+msgid ""
+"Choose a method to make a before after slider using a single image, 2 images,"
+" 3 images, and Videos."
+msgstr ""
+
+#: inc/Hook/PostType.php:62
+msgid "Choose from the most used"
+msgstr ""
+
+#: admin/tf-options/fields/gallery/BEAF_gallery.php:31
+#: admin/tf-options/fields/gallery/BEAF_gallery.php:33
+msgid "Clear"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:12
+#: inc/templates/bafg-gallery-generator.php:60
+msgid "Click here"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:560
+#: admin/tf-options/metaboxes/beaf-metabox.php:570
+msgid "Click To Move"
+msgstr ""
+
+#: admin/bafg-admin.php:260
+msgid "Close this Notice"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:116
+msgid "Colors(Hover and Active):"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:108
+msgid "Colors(Normal):"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:29
+#: inc/templates/bafg-gallery-generator.php:76
+msgid "Columns:"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:590
+msgid "Conflicting with lazy load? Try to skip lazy load."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:13
+#: inc/bafg-elementor/widgets/bafg-slider.php:91
+msgid "Content"
+msgstr ""
+
+#: inc/bafg-elementor/widgets/bafg-slider.php:144
+msgid "Create a Slide First"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:61
+msgid "Create Slider"
+msgstr ""
+
+#: admin/bafg-admin.php:122
+msgid "Date"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:40
+msgid ""
+"Debug mode allows you to troubleshoot conflicts with the theme or other "
+"plugins."
+msgstr ""
+
+#: inc/functions.php:640 admin/tf-options/metaboxes/beaf-metabox.php:402
+msgid "Default"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:463
+msgid "Default offset"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:714
+msgid "Description Styles"
+msgstr ""
+
+#: inc/functions.php:644 admin/tf-options/metaboxes/beaf-metabox.php:406
+msgid "Design 1"
+msgstr ""
+
+#: inc/functions.php:648 admin/tf-options/metaboxes/beaf-metabox.php:411
+msgid "Design 2"
+msgstr ""
+
+#: inc/functions.php:652 admin/tf-options/metaboxes/beaf-metabox.php:416
+msgid "Design 3"
+msgstr ""
+
+#: inc/functions.php:656 admin/tf-options/metaboxes/beaf-metabox.php:421
+msgid "Design 4"
+msgstr ""
+
+#: inc/functions.php:660 admin/tf-options/metaboxes/beaf-metabox.php:426
+msgid "Design 5"
+msgstr ""
+
+#: inc/functions.php:664 admin/tf-options/metaboxes/beaf-metabox.php:431
+msgid "Design 6"
+msgstr ""
+
+#: inc/functions.php:668 admin/tf-options/metaboxes/beaf-metabox.php:436
+msgid "Design 7"
+msgstr ""
+
+#: inc/functions.php:672 admin/tf-options/metaboxes/beaf-metabox.php:441
+msgid "Design 8"
+msgstr ""
+
+#: inc/functions.php:676 admin/tf-options/metaboxes/beaf-metabox.php:446
+msgid "Design 9"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:533
+msgid "Disable Handle"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:30
+#: admin/tf-options/options/beaf-settings.php:31
+msgid "Disable publicly queryable"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:535
+msgid "Disable the slider handle."
+msgstr ""
+
+#: inc/class-helper-banner.php:97
+msgid "Discount"
+msgstr ""
+
+#: inc/dashboard-promo-notice.php:251
+msgid "Dismiss"
+msgstr ""
+
+#: inc/class-sidebar-banner.php:429
+msgid "Dismiss this notice."
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:40
+#: inc/templates/bafg-gallery-generator.php:83
+msgid "Display Slider Title, Description and Read more link"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:137
+msgid "Docs"
+msgstr ""
+
+#: admin/inc/functions.php:40 inc/Hook/BafgAdminMenu.php:26
+#: inc/Hook/BafgAdminMenu.php:27 admin/tf-options/classes/BEAF_Settings.php:288
+#: admin/tf-options/options/beaf-settings.php:126
+#: admin/tf-options/options/beaf-settings.php:131
+msgid "Documentation"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:663
+msgid "e.g:340px|%"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:654
+msgid "e.g:640px|%"
+msgstr ""
+
+#: admin/tf-options/fields/gallery/BEAF_gallery.php:31
+#: admin/tf-options/fields/gallery/BEAF_gallery.php:33
+msgid "Edit Gallery"
+msgstr ""
+
+#: inc/Hook/PostType.php:57
+msgid "Edit Item"
+msgstr ""
+
+#: inc/Hook/PostType.php:28
+msgid "Edit Slider"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:38
+#: admin/tf-options/options/beaf-settings.php:39
+msgid "Enable Debug Mode"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:45
+#: admin/tf-options/options/beaf-settings.php:46
+msgid "Enable Image Link"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:61
+msgid ""
+"Enable or Disable watermark for this individual slider (Page will reload to "
+"save data)"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:21
+#: admin/tf-options/options/beaf-settings.php:23
+msgid "Enable Preloader"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:544
+msgid "Enable to display slider on full screen."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:59
+#: admin/tf-options/metaboxes/beaf-metabox.php:60
+#: admin/tf-options/options/beaf-settings.php:67
+#: admin/tf-options/options/beaf-settings.php:68
+msgid "Enable Watermark"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:82
+msgid "Enable Watermark Opacity"
+msgstr ""
+
+#: inc/widget/bafg-widget.php:95
+msgid "Enter Shortcode:"
+msgstr ""
+
+#: inc/class-sidebar-banner.php:378
+msgid "Every 24 hours"
+msgstr ""
+
+#: admin/inc/functions.php:49
+msgid "Feature Request"
+msgstr ""
+
+#: admin/tf-options/BEAF_Options.php:313
+msgid "Field not found!"
+msgstr ""
+
+#: inc/Hook/Hook.php:179
+msgid "file is missing! It is required to function properly!"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:368
+msgid "Filtering will applicable on selected image."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:146
+msgid "First Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:154
+msgid "First Image Alter text"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:708
+#: admin/tf-options/metaboxes/beaf-metabox.php:738
+#: admin/tf-options/metaboxes/beaf-metabox.php:750
+msgid "Font Color"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:689
+#: admin/tf-options/metaboxes/beaf-metabox.php:719
+#: admin/tf-options/metaboxes/beaf-metabox.php:776
+msgid "Font Size"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:284
+#: admin/tf-options/metaboxes/beaf-metabox.php:298
+msgid "formats."
+msgstr ""
+
+#: admin/tf-options/fields/date/BEAF_date.php:19
+msgid "From"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:542
+msgid "Full Screen View"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:64 inc/Hook/BafgAdminMenu.php:17
+#: inc/Hook/BafgAdminMenu.php:18
+msgid "Gallery Generator"
+msgstr ""
+
+#: admin/bafg-admin.php:228
+msgid "Gallery Shortcode"
+msgstr ""
+
+#: inc/class-helper-banner.php:91
+msgid "Get"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:250
+msgid "Get a free WordPress development quote"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:255
+msgid "Get Free Quote"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:294
+msgid "Get Support"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:354
+msgid "Grayscale"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:684
+msgid "Heading Styles"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:283
+msgid "Helpful Resources"
+msgstr ""
+
+#. %s is replaced with "user id & Plugins Name"
+#: inc/functions.php:328
+#, php-format
+msgid ""
+"Hey 👋, You have been using %1$s for quite a while. If you feel %1$s is "
+"helping your business to grow in any way, would you please help %1$s to grow "
+"by simply leaving a 5* review on the WordPress Forum?"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:388
+msgid "Horizontal"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:78
+msgid "Horizontal/Vertical Slider"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:88
+msgid "Hover / Drag Interaction"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:770
+msgid "Hover Background Color"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:757
+msgid "Hover Color"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:465
+msgid "How much of the before image is visible when the page loads. (e.g: 0.7)"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:284
+#: admin/tf-options/metaboxes/beaf-metabox.php:298
+msgid "HTML5 video player supports only "
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:326
+msgid "https://example.com"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://themefic.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://themefic.com/plugins/beaf/"
+msgstr ""
+
+#: inc/functions.php:340
+msgid "I already did"
+msgstr ""
+
+#: inc/functions.php:344
+msgid "I need help"
+msgstr ""
+
+#: admin/bafg-admin.php:256
+msgid ""
+"If you want to use before after slider on the WooCommerce product page, you "
+"can try our free plugin"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:92
+msgid "Input opacity value between 0 and 100"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:127
+msgid "Introducing BEAF 4.6.2: Improved Performance and New Features"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:652
+msgid "Invalid request!"
+msgstr ""
+
+#: admin/bafg-admin.php:255
+msgid "It looks like you have WooCommerce plugin installed."
+msgstr ""
+
+#: inc/Hook/PostType.php:67
+msgid "Items list"
+msgstr ""
+
+#: inc/Hook/PostType.php:68
+msgid "Items list navigation"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:300
+msgid "Join our Community"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:123
+msgid "Latest posts from BEAF"
+msgstr ""
+
+#: admin/tf-options/fields/map/BEAF_map.php:23
+msgid "Latitude"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:132
+msgid "Left"
+msgstr ""
+
+#: admin/tf-options/fields/map/BEAF_map.php:24
+msgid "Longitude"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:35
+msgid "Max Items:"
+msgstr ""
+
+#: inc/functions.php:342
+msgid "Maybe Later"
+msgstr ""
+
+#: inc/functions.php:538 admin/tf-options/metaboxes/beaf-metabox.php:24
+msgid "Method 1 (Using 2 images)"
+msgstr ""
+
+#. %1$s, %2$s is replaced with "tooltip "
+#: admin/tf-options/metaboxes/beaf-metabox.php:28
+#, php-format
+msgid "Method 2 (Using 1 image ) %1$s"
+msgstr ""
+
+#: inc/functions.php:539
+msgid "Method 2 (Using 1 image)"
+msgstr ""
+
+#: inc/functions.php:1211
+msgid "Method 3 ( Using 3 images )"
+msgstr ""
+
+#. %1$s, %2$s is replaced with "tooltip & link"
+#: admin/tf-options/metaboxes/beaf-metabox.php:36
+#, php-format
+msgid ""
+"Method 3 (Using 3 images ) %1$s Pro feature! 3 image slider addon required "
+"to activate this. %2$s"
+msgstr ""
+
+#: inc/functions.php:541
+msgid ""
+"Method 3 (Using 3 images )<div class=\"bafg-tooltip method-3-tooltip\"><span>"
+"?</span><div class=\"bafg-tooltip-info\">Pro feature! 3 image slider addon "
+"required to activate this. <a href=\"https://themefic.com/wp-"
+"content/uploads/2023/07/3-image-slider-addon.png\" target=\"_blank\"> More "
+"info</a></div></div>"
+msgstr ""
+
+#: inc/functions.php:1232
+msgid "Method 4 ( Using Videos )"
+msgstr ""
+
+#. %1$s, %2$s is replaced with "tooltip & link"
+#: admin/tf-options/metaboxes/beaf-metabox.php:45
+#, php-format
+msgid ""
+"Method 4 (Using Video) %1$s Pro feature! Video slider addon required to "
+"activate this. %2$s"
+msgstr ""
+
+#: inc/functions.php:547
+msgid ""
+"Method 4 (Using Video) <div class=\"bafg-tooltip method-3-tooltip\"><span>?"
+"</span><div class=\"bafg-tooltip-info\">Pro feature! Video slider addon "
+"required to activate this. <a href=\"https://themefic.com/wp-"
+"content/uploads/2023/07/video-slider-addon.png\" target=\"_blank\"> More "
+"info</a></div></div>"
+msgstr ""
+
+#: admin/bafg-admin.php:120
+msgid "Middle Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:479
+msgid "Middle Label"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:552
+msgid "Move slider on mouse hover?"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:284
+#: admin/tf-options/metaboxes/beaf-metabox.php:298
+msgid "MP4, WebM, and Ogg"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:83
+msgid "Multi-column Gallery"
+msgstr ""
+
+#: admin/inc/functions.php:33
+msgid "Need Help?"
+msgstr ""
+
+#: inc/functions.php:346
+msgid "Never show again"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:126
+msgid "NEW"
+msgstr ""
+
+#: inc/Hook/PostType.php:55
+msgid "New Item Name"
+msgstr ""
+
+#: inc/Hook/PostType.php:27
+msgid "New Slider"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:334
+msgid "New Tab"
+msgstr ""
+
+#: inc/class-sidebar-banner.php:144
+msgid "No active widget promotion."
+msgstr ""
+
+#: inc/Hook/PostType.php:66
+msgid "No items"
+msgstr ""
+
+#: inc/Hook/PostType.php:33
+msgid "No slider found in Trash."
+msgstr ""
+
+#: inc/Hook/PostType.php:32
+msgid "No slider found."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:353
+#: admin/tf-options/metaboxes/beaf-metabox.php:370
+msgid "None"
+msgstr ""
+
+#: inc/Hook/PostType.php:65
+msgid "Not Found"
+msgstr ""
+
+#: admin/tf-options/fields/switch/BEAF_switch.php:16
+#: admin/tf-options/fields/switch/BEAF_switch.php:20
+msgid "Off"
+msgstr ""
+
+#: admin/tf-options/fields/switch/BEAF_switch.php:15
+#: admin/tf-options/fields/switch/BEAF_switch.php:19
+msgid "On"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:523
+msgid "On Scroll Slide"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:55
+msgid "Open Before After image URL to a new tab"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:53
+#: admin/tf-options/options/beaf-settings.php:54
+msgid "Open Link"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:314
+#: admin/tf-options/metaboxes/beaf-metabox.php:320
+#: admin/tf-options/metaboxes/beaf-metabox.php:342
+msgid "Optional"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:457
+msgid "Options"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:664
+msgid "Options saved successfully!"
+msgstr ""
+
+#: inc/widget/bafg-widget.php:93
+msgid "Or:"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:381
+msgid "Orientation Styles"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:790
+msgid "Padding Left Right"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:783
+msgid "Padding Top Bottom"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:127
+msgid "Padding(Left - Right):"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:124
+msgid "Padding(Top - Bottom):"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:93
+msgid "Page Builder Support"
+msgstr ""
+
+#: inc/Hook/PostType.php:53
+msgid "Parent Item"
+msgstr ""
+
+#: inc/Hook/PostType.php:54
+msgid "Parent Item:"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:514
+msgid "Play Both Videos On Slide"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:516
+msgid "Plays both before after videos on slide togather."
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:77
+msgid "PNG image recommended"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:73
+msgid "Popular Features"
+msgstr ""
+
+#: inc/Hook/PostType.php:63
+msgid "Popular Items"
+msgstr ""
+
+#: admin/tf-options/BEAF_Options.php:289
+msgid "Pro"
+msgstr ""
+
+#: inc/functions.php:98 inc/functions.php:100
+msgid "Read more"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:325
+msgid "Read More Link"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:331
+msgid "Read More Link Target"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:744
+msgid "Read more Styles"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:341
+msgid "Read More Text"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:306
+msgid "Request a Feature"
+msgstr ""
+
+#: inc/Hook/Shortcode.php:341
+msgid "Reset"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:134
+msgid "Right"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:333
+msgid "Same Page"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:357
+msgid "Saturate"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:215
+msgid "Save"
+msgstr ""
+
+#: admin/tf-options/fields/map/BEAF_map.php:22
+msgid "Search Address..."
+msgstr ""
+
+#: inc/Hook/PostType.php:64
+msgid "Search Items"
+msgstr ""
+
+#: inc/Hook/PostType.php:31
+msgid "Search Sliders"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:162
+msgid "Second Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:170
+msgid "Second Image Alter text"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:351
+msgid "Select a filtering effect to use on the before or after image."
+msgstr ""
+
+#: inc/widget/bafg-widget.php:80 inc/bafg-elementor/widgets/bafg-slider.php:138
+msgid "Select a Slider"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:399
+msgid "Select a style for the before and after label."
+msgstr ""
+
+#: admin/tf-options/fields/date/BEAF_date.php:21
+#: admin/tf-options/fields/date/BEAF_date.php:32
+#: admin/tf-options/fields/time/BEAF_time.php:20
+msgid "Select Date"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:350
+msgid "Select Filter Effect"
+msgstr ""
+
+#: inc/bafg-elementor/widgets/bafg-slider.php:98
+msgid "Select slider"
+msgstr ""
+
+#: inc/widget/bafg-widget.php:70
+msgid "Select Slider:"
+msgstr ""
+
+#: admin/tf-options/fields/time/BEAF_time.php:16
+msgid "Select Time"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:203
+msgid "Self Hosted"
+msgstr ""
+
+#: inc/Hook/PostType.php:60
+msgid "Separate items with commas"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:356
+msgid "Sepia"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:490
+msgid "Set a custom label for the after image."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:473
+msgid "Set a custom label for the before image."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:481
+msgid "Set a custom label for the middle image."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:645
+msgid "Set a value between 0 to 100. (e.g: 50)"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:111
+msgid "Settings"
+msgstr ""
+
+#: admin/bafg-admin.php:118 inc/Hook/PostType.php:93
+msgid "Shortcode"
+msgstr ""
+
+#: admin/bafg-admin.php:47 inc/templates/bafg-gallery-generator.php:53
+#: inc/templates/bafg-gallery-generator.php:89
+msgid "Shortcode Copied!"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:51
+#: inc/templates/bafg-gallery-generator.php:87
+msgid "Shortcode:"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:113
+msgid "Shortcodes"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:580
+msgid "Show Overlay"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:582
+msgid "Show overlay on the before and after image."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:588
+msgid "Skip Lazy Load"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:670
+msgid "Slider Alignment"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:319
+msgid "Slider Description"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:628
+msgid "Slider Handle Color"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:661
+msgid "Slider Height"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:308
+msgid "Slider Information"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:636
+msgid "Slider Overlay Color"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:643
+msgid "Slider Overlay Opacity"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:313
+msgid "Slider Title"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:199
+msgid "Slider Video Type"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:652
+msgid "Slider Width"
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:657
+msgid "Something went wrong!"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:597
+msgid "Style"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:141
+msgid "Support"
+msgstr ""
+
+#: inc/Hook/PostType.php:49
+msgctxt "Taxonomy General Name"
+msgid "Categories"
+msgstr ""
+
+#: inc/Hook/PostType.php:50
+msgctxt "Taxonomy Singular Name"
+msgid "Category"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:110
+#: inc/templates/bafg-gallery-generator.php:118
+msgid "Text Color:"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:572
+msgid ""
+"The 'Click to Move' feature is unavailable when 'Auto Slide' is enabled. "
+"Please disable 'Auto Slide' to use the 'Click to Move' functionality."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:525
+msgid "The before and after image slider will slide on scroll automatically."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:507
+msgid "The before and after image will slide automatically."
+msgstr ""
+
+#. Author of the plugin
+msgid "Themefic"
+msgstr ""
+
+#: inc/class-sidebar-banner.php:129
+msgid "Themefic Deals & Services"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:178
+msgid "Third Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:186
+msgid "Third Image Alter text"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:140
+msgid "Three Image"
+msgstr ""
+
+#: admin/bafg-admin.php:117
+msgid "Title"
+msgstr ""
+
+#: inc/widget/bafg-widget.php:66
+msgid "Title:"
+msgstr ""
+
+#: admin/tf-options/fields/date/BEAF_date.php:20
+msgid "To"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:12
+#: inc/templates/bafg-gallery-generator.php:60
+msgid "to learn more."
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:16
+msgid "Tools"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:53
+msgid "Total Sliders"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:109
+msgid "Unlock Pro Features"
+msgstr ""
+
+#: admin/tf-options/BEAF_Options.php:294
+msgid "Upcoming"
+msgstr ""
+
+#: inc/Hook/PostType.php:58
+msgid "Update Item"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:117
+msgid "Upgrade Now"
+msgstr ""
+
+#: admin/tf-options/fields/image/BEAF_image.php:24
+msgid "Upload"
+msgstr ""
+
+#: inc/Hook/Shortcode.php:337
+msgid "Upload After Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:119
+msgid "Upload after image for the slider"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:77
+msgid "Upload before and after image for the slider"
+msgstr ""
+
+#: inc/Hook/Shortcode.php:333
+msgid "Upload Before Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:91
+msgid "Upload before image for the slider"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:75
+msgid "Upload Watermark Image"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:232
+#: admin/tf-options/metaboxes/beaf-metabox.php:245
+#: admin/tf-options/metaboxes/beaf-metabox.php:258
+#: admin/tf-options/metaboxes/beaf-metabox.php:271
+msgid "Use video url eg. "
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:384
+msgid "Vertical"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:221
+msgid "Video Height"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:193
+msgid "Video Slider Option"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:212
+msgid "Video Width"
+msgstr ""
+
+#: inc/Hook/PostType.php:59
+msgid "View Item"
+msgstr ""
+
+#: inc/Hook/PostType.php:29
+msgid "View Slider"
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:202
+msgid "Vimeo"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:61
+msgid "Watermark"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:74
+msgid "Watermark Image Upload (PNG Recommended)"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:90
+#: admin/tf-options/options/beaf-settings.php:91
+msgid "Watermark Opacity"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:83
+msgid "Watermark Opacity (Required PNG-8 image)"
+msgstr ""
+
+#: admin/tf-options/options/beaf-settings.php:99
+#: admin/tf-options/options/beaf-settings.php:100
+msgid "Watermark Position"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:60
+msgid ""
+"With this option, you can easily generate 2 columns, 3 columns or even 4 "
+"columns Before - After Filterable Gallery. Just select the options below, "
+"generate shortcode and copy-paste the shortcode wherever you want to show "
+"the gallery on your website. That's it"
+msgstr ""
+
+#: inc/templates/bafg-gallery-generator.php:12
+msgid ""
+"With this option, you can easily generate 2 columns, 3 columns or even 4 "
+"columns Before - After Gallery. Just select the options below, generate "
+"shortcode and copy-paste the shortcode wherever you want to show the gallery "
+"on your website. That's it."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Would you like to show a comparison of two images? With BEAF, you can easily "
+"create before and after image sliders or galleries. Elementor Supported."
+msgstr ""
+
+#: admin/tf-options/classes/BEAF_Settings.php:529
+msgid "You are not allowed to perform this action."
+msgstr ""
+
+#: admin/tf-options/metaboxes/beaf-metabox.php:201
+msgid "Youtube"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:111
+msgid "✔ 10+ Preview Styles"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:113
+msgid "✔ 3 Image Comparison"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:114
+msgid "✔ Filterable Gallery"
+msgstr ""
+
+#: inc/class-dashboard-widget.php:112
+msgid "✔ Video Slider"
+msgstr ""

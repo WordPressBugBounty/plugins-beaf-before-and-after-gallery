@@ -6,20 +6,6 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitBeaf
 {
-    public static $prefixLengthsPsr4 = array (
-        'A' => 
-        array (
-            'Appsero\\' => 8,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'Appsero\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/appsero/client/src',
-        ),
-    );
-
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -27,8 +13,6 @@ class ComposerStaticInitBeaf
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitBeaf::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitBeaf::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInitBeaf::$classMap;
 
         }, null, ClassLoader::class);

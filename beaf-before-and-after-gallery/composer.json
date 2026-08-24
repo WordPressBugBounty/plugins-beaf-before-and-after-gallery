@@ -1,0 +1,18 @@
+{
+    "name": "themefic/beaf-before-and-after-gallery",
+    "description": "BEAF - Ultimate Before After Image Slider & Gallery for WordPress",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Themefic",
+            "homepage": "https://themefic.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "config": {
+        "autoloader-suffix": "Beaf"
+    }
+}

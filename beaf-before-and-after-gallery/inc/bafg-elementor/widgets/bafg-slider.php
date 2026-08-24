@@ -33,7 +33,7 @@ class BAFG_Slider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'BEAF Slider', 'bafg' );
+		return __( 'BEAF Slider', 'beaf-before-and-after-gallery' );
 	}
 
 	/**
@@ -88,14 +88,14 @@ class BAFG_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Content', 'bafg' ),
+				'label' => __( 'Content', 'beaf-before-and-after-gallery' ),
 			]
 		);
         
         $this->add_control(
 			'bafg_slide',
 			[
-				'label' => __( 'Select slider', 'bafg' ),
+				'label' => __( 'Select slider', 'beaf-before-and-after-gallery' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => $this->get_bafg_list(),
 			]
@@ -135,13 +135,13 @@ class BAFG_Slider extends Widget_Base {
 			'post_type' => 'bafg',
 			'showposts' => 999,
 		));
-		$options[0] = esc_html__('Select a Slider', 'bafg');
+		$options[0] = esc_html__('Select a Slider', 'beaf-before-and-after-gallery');
 		if (!empty($bafg_list) && !is_wp_error($bafg_list)) {
 			foreach ($bafg_list as $post) {
 				$options[$post->ID] = $post->post_title;
 			}
 		} else {
-			$options[0] = esc_html__('Create a Slide First', 'bafg');
+			$options[0] = esc_html__('Create a Slide First', 'beaf-before-and-after-gallery');
 		}
 		return $options;
 	}

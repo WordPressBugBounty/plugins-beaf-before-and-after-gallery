@@ -12,12 +12,12 @@ if ( ! class_exists( 'BEAF_switch' ) ) {
 		public function render() {
 
 			$args = wp_parse_args( $this->field, array(
-				'label_on' => __( 'On', 'bafg' ),
-				'label_off' => __( 'Off', 'bafg' ),
+				'label_on' => __( 'On', 'beaf-before-and-after-gallery' ),
+				'label_off' => __( 'Off', 'beaf-before-and-after-gallery' ),
 			) );
 
-			$on = ( ! empty( $args['label_on'] ) ) ? $args['label_on'] : esc_html__( 'On', 'bafg' );
-			$off = ( ! empty( $args['label_off'] ) ) ? $args['label_off'] : esc_html__( 'Off', 'bafg' );
+			$on = ( ! empty( $args['label_on'] ) ) ? $args['label_on'] : esc_html__( 'On', 'beaf-before-and-after-gallery' );
+			$off = ( ! empty( $args['label_off'] ) ) ? $args['label_off'] : esc_html__( 'Off', 'beaf-before-and-after-gallery' );
 			$width = ( ! empty( $this->field['width'] ) ) ? ' style="width: ' . esc_attr( $this->field['width'] ) . 'px;"' : '';
 
 			$class = 'tf-switch';

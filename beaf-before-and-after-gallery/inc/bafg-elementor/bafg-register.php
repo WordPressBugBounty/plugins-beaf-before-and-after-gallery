@@ -1,6 +1,11 @@
 <?php
 namespace ElementorBafg;
 
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 //use ElementorBafg\PageSettings\Page_Settings;
 
 /**

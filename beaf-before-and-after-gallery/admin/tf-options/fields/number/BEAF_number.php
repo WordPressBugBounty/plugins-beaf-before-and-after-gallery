@@ -12,7 +12,7 @@ if ( ! class_exists( 'BEAF_number' ) ) {
 		public function render() {
 			$type = ( ! empty( $this->field['type'] ) ) ? $this->field['type'] : 'number';
 			$placeholder = ( ! empty( $this->field['placeholder'] ) ) ? 'placeholder="' . $this->field['placeholder'] . '"' : '';
-			echo '<input type="' . esc_attr( $type ) . '" name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '" ' . esc_attr( $placeholder ) . ' ' . esc_attr( $this->field_attributes() ) . '/>';
+			echo '<input type="' . esc_attr( $type ) . '" name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '" ' . wp_kses_post( $placeholder ) . ' ' . esc_attr( $this->field_attributes() ) . '/>';
 		}
 
 	}

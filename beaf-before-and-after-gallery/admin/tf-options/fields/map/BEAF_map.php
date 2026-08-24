@@ -19,9 +19,9 @@ if ( ! class_exists( 'BEAF_map' ) ) {
 				}
 			endif;
 			$args = wp_parse_args( $this->field, array(
-				'placeholder' => esc_html__( 'Search Address...', 'bafg' ),
-				'latitude_text' => esc_html__( 'Latitude', 'bafg' ),
-				'longitude_text' => esc_html__( 'Longitude', 'bafg' ),
+				'placeholder' => esc_html__( 'Search Address...', 'beaf-before-and-after-gallery' ),
+				'latitude_text' => esc_html__( 'Latitude', 'beaf-before-and-after-gallery' ),
+				'longitude_text' => esc_html__( 'Longitude', 'beaf-before-and-after-gallery' ),
 				'address_field' => '',
 				'height' => '250',
 			) );

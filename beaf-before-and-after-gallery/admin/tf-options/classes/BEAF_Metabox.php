@@ -13,9 +13,9 @@ if ( ! class_exists( 'BEAF_Metabox' ) ) {
 		public function __construct( $key, $params = array() ) {
 
 			$this->metabox_id = $key;
-			$this->metabox_title = ! empty( $params['title'] ) ? apply_filters( $key . '_title', $params['title'] ) : '';
+			$this->metabox_title = ! empty( $params['title'] ) ? apply_filters( 'bafg_' . $key . '_title', $params['title'] ) : '';
 			$this->metabox_post_type = $params['post_type'];
-			$this->metabox_sections = ! empty( $params['sections'] ) ? apply_filters( $key . '_sections', $params['sections'] ) : array();
+			$this->metabox_sections = ! empty( $params['sections'] ) ? apply_filters( 'bafg_' . $key . '_sections', $params['sections'] ) : array();
 
 			add_action( 'add_meta_boxes', array( $this, 'tf_meta_box' ) );
 			add_action( 'save_post', array( $this, 'save_metabox' ), 10, 2 );
@@ -92,7 +92,7 @@ if ( ! class_exists( 'BEAF_Metabox' ) ) {
 						<a class="tf-tablinks <?php echo $section_count == 0 ? 'active' : ''; ?>"
 							data-tab="<?php echo esc_attr( $key ) ?>">
 							<?php echo ! empty( $section['icon'] ) ? '<span class="tf-sec-icon"><i class="' . esc_attr( $section['icon'] ) . '"></i></span>' : ''; ?>
-							<?php echo esc_html__( $section['title'], "bafg" ); ?>
+							<?php echo esc_html( $section['title'] ); ?>
 						</a>
 						<?php $section_count++; endforeach; ?>
 				</div>
@@ -130,7 +130,7 @@ if ( ! class_exists( 'BEAF_Metabox' ) ) {
 		public function save_metabox( $post_id ) {
 
 			// Check if a nonce is valid.
-			if ( ! isset( $_POST['tf_meta_box_nonce'] ) || ! wp_verify_nonce( $_POST['tf_meta_box_nonce'], 'tf_meta_box_nonce_action' ) ) {
+			if ( ! isset( $_POST['tf_meta_box_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['tf_meta_box_nonce'] ) ), 'tf_meta_box_nonce_action' ) ) {
 				return;
 			}
 
@@ -150,7 +150,7 @@ if ( ! class_exists( 'BEAF_Metabox' ) ) {
 			}
 
 			$tf_meta_box_value = array();
-			$metabox_request = ( ! empty( $_POST[ $this->metabox_id ] ) ) ? $_POST[ $this->metabox_id ] : array();
+			$metabox_request = ( ! empty( $_POST[ $this->metabox_id ] ) ) ? map_deep( wp_unslash( $_POST[ $this->metabox_id ] ), 'sanitize_text_field' ) : array();
 
 			if ( ! empty( $metabox_request ) && ! empty( $this->metabox_sections ) ) {
 				foreach ( $this->metabox_sections as $section ) {
@@ -183,33 +183,6 @@ if ( ! class_exists( 'BEAF_Metabox' ) ) {
 				delete_post_meta( $post_id, $this->metabox_id );
 			}
 
-			/**
-			 * Hotel and Tour Pabbly Integration
-			 * @author Jahid
-			 */
-			if ( ! empty( $_POST['post_type'] ) && $_POST['post_type'] == "tf_hotel" ) {
-				$tf_metabox_request = ( ! empty( $_POST['tf_hotels_opt'] ) ) ? $_POST['tf_hotels_opt'] : array();
-			}
-			if ( ! empty( $_POST['post_type'] ) && $_POST['post_type'] == "tf_tours" ) {
-				$tf_metabox_request = ( ! empty( $_POST['tf_tours_opt'] ) ) ? $_POST['tf_tours_opt'] : array();
-			}
-			if ( ! empty( $_POST['post_type'] ) && $_POST['post_type'] == "tf_apartment" ) {
-				$tf_metabox_request = ( ! empty( $_POST['tf_apartment_opt'] ) ) ? $_POST['tf_apartment_opt'] : array();
-			}
-			$post_basic_info = array(
-				'post_id' => sanitize_key( $post_id ),
-				'post_title' => sanitize_text_field( $_POST['post_title'] ),
-				'post_content' => sanitize_text_field( @$_POST['content'] ),
-				'post_status' => sanitize_text_field( @$_POST['post_status'] ),
-				'post_thumbnail' => ! empty( get_the_post_thumbnail_url( $post_id, 'full' ) ) ? get_the_post_thumbnail_url( $post_id, 'full' ) : '',
-				'post_date' => get_the_date( 'Y-m-d H:i:s', $post_id )
-			);
-			if ( function_exists( 'is_tf_pro' ) && is_tf_pro() ) {
-				if ( ( ! empty( $_POST['post_type'] ) && $_POST['post_type'] == "tf_hotel" ) || ( ! empty( $_POST['post_type'] ) && $_POST['post_type'] == "tf_tours" ) || ( ! empty( $_POST['post_type'] ) && $_POST['post_type'] == "tf_apartment" ) ) {
-					do_action( 'tf_services_pabbly_form_trigger', $post_id, $post_basic_info, $tf_metabox_request );
-					do_action( 'tf_services_zapier_form_trigger', $post_id, $post_basic_info, $tf_metabox_request );
-				}
-			}
 		}
 
 	}

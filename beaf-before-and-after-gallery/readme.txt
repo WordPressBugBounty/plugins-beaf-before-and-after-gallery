@@ -1,10 +1,10 @@
 === Ultimate Before After Image Slider & Gallery - BEAF ===
 Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
-Requires at least: 4.0
-Stable tag: 4.7.18
-Tested up to: 7.0
+Requires at least: 6.8
+Tested up to: 7.1
 Requires PHP: 7.4
+Stable tag: 4.7.19
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -224,9 +224,6 @@ You can easily disable the slider handle. [Click here](https://themefic.com/plug
 
 Yes, we provide full support on the WordPress.org forums & [Our Website](https://portal.themefic.com/support/). You can also join our [BEAF Facebook Group](https://facebook.com/groups/beaf.wp) to stay informed with latest news and updatesc.  Check our [Support Policy](https://themefic.com/support-policy/).
 
-### Privacy Policy
-Ultimate Before After Image Slider & Gallery – BEAF uses [Appsero](https://appsero.com/) SDK to collect some telemetry data. Appsero SDK does not gather any data by default. The SDK only starts gathering basic telemetry data when a user allows it via the admin notice. Appsero SDK DOES NOT IMMEDIATELY start gathering data, without confirmation from users in any case. We use this data to troubleshoot problems faster, make product improvements & ensure a great user experience for all our users.
-
 ### Credit
 
 BEAF is based on the famous [TwentyTwenty](https://zurb.com/playground/twentytwenty) script that developed by Zurb team. Our icon is taken from [Iconfinder](https://iconfinder.com/).
@@ -308,9 +305,6 @@ We offer a separate plugin for that, which is available [here](https://wordpress
 
 Yes, we provide full support on the WordPress.org forums & [Our Website](https://portal.themefic.com/support/). You can also join our [BEAF Facebook Group](https://facebook.com/groups/beaf.wp) to stay informed with latest news and updatesc.  Check our [Support Policy](https://themefic.com/support-policy/).
 
-=  =
-
-
 == Screenshots ==
 
 1. Multiple Layouts (Vertical & Horizontal)
@@ -336,6 +330,12 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Changelog ==
 
+= 4.7.19 – Aug 24, 2026 =
+
+- Security: Improved vulnerability in slider label rendering.
+- Security: Improved capability and nonce security issues.
+- Fix: Improved settings and WordPress.org guideline compliance.
+
 = 4.7.18 – Jun 22, 2026 =
 
 - Info: System stability has been improved.
@@ -343,83 +343,6 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 = 4.7.17 – May 26, 2026 =
 
 - Compatibility: Fully compatible with WordPress v7.0.
-
-= 4.7.16 – May 11, 2026 =
-
-- Info: System stability has been improved.
-
-= 4.7.15 – April 08, 2026 =
-
-- Improved: Dashboard widget for quick overview and status insights.
-
-= 4.7.14 – February 08, 2026 =
-
-- Compatibility: Compatible with WordPress 6.9.1.
-
-= 4.7.13 – January 16, 2026 =
-
-- Info: System stability has been improved.
-
-= 4.7.12 – 08/12/2025 =
-
-- Compatibility: Fully compatible with WordPress v6.9.
-
-= 4.7.11 – 11/11/2025 =
-
-- Fixed: Minor design issue resolved.
-
-= 4.7.10 – 09/11/2025 =
-
-- Updated: Information in readme.txt file.
-- Improved: System stability and performance.
-- Improved: Compatibility with Elementor version 3.33.
-- Updated: Code escaping and security improvements.
-
-= 4.7.9 – 16/10/2025 =
-
-- Compatibility: Compatible with WordPress 6.8.3.
-- Improved: System stability improved.
-
-= 4.7.8 – 22/09/2025 =
-
-- Fixed: Helper banner issue has been resolved.
-- Fixed: Gallery label issue has been resolved.
-
-= 4.7.7 – 02/09/2025 =
-
-- Improved: System stability improved.
-- Improved: Compatibility with Elementor (v3.31).
-
-= 4.7.6 – 16/08/2025 =
-
-- Fixed: Loading text domains notice has been resolved.
-
-= 4.7.5 – 11/08/2025 =
-
-- Fixed: readme.txt file updated.
-
-= 4.7.4 – 10/08/2025 =
-
-- Fixed: readme.txt file updated.
-
-= 4.7.3 – 01/08/2025 =
-
-- Fixed: Undefined array key “content” issue resolved.
-
-= 4.7.2 – 16/06/2025 =
-
-- Improved: Security Vulnerability and System stability.
-- Improved: Compatibility with Elementor (v3.29).
-
-= 4.7.1 – 22/05/2025 =
-
-- Improved: Security Vulnerability and System stability
-
-= 4.7.0 – 20/05/2025 =
-
-- Fixed: Access permission issues have been resolved.
-- Added: Settings sidebar banner has been introduced for Info.
-- System stability has been enhanced for better performance.
 
 = Changelog Between 2020 - 2023 =
 Find them [here](https://themefic.com/plugins/beaf/#changelogs).

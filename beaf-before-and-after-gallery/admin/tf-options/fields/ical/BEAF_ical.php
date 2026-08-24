@@ -28,7 +28,7 @@ if ( ! class_exists( 'BEAF_ical' ) ) {
 			$pricing_by = ! empty( $rooms[ $room_index ]['pricing-by'] ) ? $rooms[ $room_index ]['pricing-by'] : '1';
 
 			$placeholder = ( ! empty( $this->field['placeholder'] ) ) ? 'placeholder="' . $this->field['placeholder'] . '"' : '';
-			echo '<input type="text" name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '" ' . esc_attr( $placeholder ) . ' ' . esc_attr( $this->field_attributes() ) . '/>';
+			echo '<input type="text" name="' . esc_attr( $this->field_name() ) . '" id="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '" ' . wp_kses_post( $placeholder ) . ' ' . esc_attr( $this->field_attributes() ) . '/>';
 
 			if ( isset( $this->field['button_text'] ) && ! empty( $this->field['button_text'] ) ) {
 				$button_class = 'button button-primary button-large';

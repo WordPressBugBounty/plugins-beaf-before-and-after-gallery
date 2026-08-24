@@ -13,11 +13,11 @@ if ( ! class_exists( 'BEAF_time' ) ) {
 
 			$args = wp_parse_args( $this->field, array(
 				'format' => 'h:i K',
-				'placeholder' => esc_html__( 'Select Time', 'bafg' ),
+				'placeholder' => esc_html__( 'Select Time', 'beaf-before-and-after-gallery' ),
 			) );
 
 			$format = ( ! empty( $args['format'] ) ) ? $args['format'] : 'Y-m-d';
-			$placeholder = ( ! empty( $args['placeholder'] ) ) ? $args['placeholder'] : esc_html__( 'Select Date', 'bafg' );
+			$placeholder = ( ! empty( $args['placeholder'] ) ) ? $args['placeholder'] : esc_html__( 'Select Date', 'beaf-before-and-after-gallery' );
 			?>
 			<input type="text" name="<?php echo esc_attr( $this->field_name() ); ?>"
 				placeholder="<?php echo esc_attr( $placeholder ) ?>" value="<?php echo esc_attr( $this->value ); ?>"

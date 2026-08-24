@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
+get_header(); 
+
+?>
 <div class="bafg-container">
 	<div class="bafg-single-page">
 		<?php if( get_post_meta(get_the_id(),'bafg_show_title',true) != 'on' ) : ?>

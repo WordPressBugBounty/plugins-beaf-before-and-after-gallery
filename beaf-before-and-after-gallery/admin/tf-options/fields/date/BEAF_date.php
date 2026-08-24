@@ -16,9 +16,9 @@ if ( ! class_exists( 'BEAF_date' ) ) {
 				'range' => false,
 				'multiple' => false,
 				'minDate' => '',
-				'label_from' => esc_html__( 'From', 'bafg' ),
-				'label_to' => esc_html__( 'To', 'bafg' ),
-				'placeholder' => esc_html__( 'Select Date', 'bafg' ),
+				'label_from' => esc_html__( 'From', 'beaf-before-and-after-gallery' ),
+				'label_to' => esc_html__( 'To', 'beaf-before-and-after-gallery' ),
+				'placeholder' => esc_html__( 'Select Date', 'beaf-before-and-after-gallery' ),
 			) );
 
 			$value = wp_parse_args( $this->value, array(
@@ -29,13 +29,13 @@ if ( ! class_exists( 'BEAF_date' ) ) {
 			$format = ( ! empty( $args['format'] ) ) ? $args['format'] : 'Y-m-d';
 			$range = ( ! empty( $args['range'] ) ) ? $args['range'] : false;
 			$multiple = ( ! empty( $args['multiple'] ) ) ? $args['multiple'] : false;
-			$placeholder = ( ! empty( $args['placeholder'] ) ) ? $args['placeholder'] : esc_html__( 'Select Date', 'bafg' );
+			$placeholder = ( ! empty( $args['placeholder'] ) ) ? $args['placeholder'] : esc_html__( 'Select Date', 'beaf-before-and-after-gallery' );
 			$minDate = ( ! empty( $args['minDate'] ) ) ? $args['minDate'] : '';
 
 			if ( $range ) : ?>
 				<div class="tf-date-range">
 					<div class="tf-date-from">
-						<label for="" class="tf-field-label"><?php echo esc_html__( $args['label_from'], 'bafg' ) ?></label>
+						<label for="" class="tf-field-label"><?php echo esc_html( $args['label_from'] ) ?></label>
 						<div class="" style="position:relative;">
 							<input type="text" name="<?php echo esc_attr( $this->field_name() ); ?>[from]"
 								placeholder="<?php echo esc_attr( $placeholder ) ?>" value="<?php echo esc_attr( $value['from'] ); ?>"
@@ -44,7 +44,7 @@ if ( ! class_exists( 'BEAF_date' ) ) {
 						</div>
 					</div>
 					<div class="tf-date-to">
-						<label for="" class="tf-field-label"><?php echo esc_html__( $args['label_to'], 'bafg' ) ?></label>
+						<label for="" class="tf-field-label"><?php echo esc_html( $args['label_to'] ) ?></label>
 						<div class="" style="position:relative;">
 							<input type="text" name="<?php echo esc_attr( $this->field_name() ); ?>[to]"
 								placeholder="<?php echo esc_attr( $placeholder ) ?>" value="<?php echo esc_attr( $value['to'] ); ?>"

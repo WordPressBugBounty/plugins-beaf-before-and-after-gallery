@@ -111,14 +111,28 @@ if ( ! class_exists( 'BEAF_Taxonomy_Metabox' ) ) {
 		 */
 		public function save_taxonomy( $term_id ) {
 
-			// Check if a nonce is valid.
-			if ( ! isset( $_POST['tf_taxonomy_nonce'] ) && ! wp_verify_nonce( $_POST['tf_taxonomy_nonce'], 'tf_taxonomy_nonce_action' ) ) {
+			/*
+			* Verify the nonce before reading or processing the submitted fields.
+			*/
+			if (
+				! isset( $_POST['tf_taxonomy_nonce'] ) ||
+				! wp_verify_nonce(
+					sanitize_text_field(
+						wp_unslash( $_POST['tf_taxonomy_nonce'] )
+					),
+					'tf_taxonomy_nonce_action'
+				)
+			) {
+				return;
+			}
+
+			if ( ! current_user_can( 'edit_term', $term_id ) ) {
 				return;
 			}
 
 
 			$tf_taxonomy_value = array();
-			$taxonomy_request = ( ! empty( $_POST[ $this->taxonomy_id ] ) ) ? $_POST[ $this->taxonomy_id ] : array();
+			$taxonomy_request = ( ! empty( $_POST[ $this->taxonomy_id ] ) ) ? sanitize_text_field( wp_unslash( $_POST[ $this->taxonomy_id ] ) ) : array();
 
 			if ( ! empty( $taxonomy_request ) && ! empty( $this->taxonomy_fields ) ) {
 				foreach ( $this->taxonomy_fields as $field ) {
