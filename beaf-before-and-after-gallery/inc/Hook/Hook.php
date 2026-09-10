@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit();
 }
 
-class Hook {
+class BafgHook {
 
 	public function init() {
 
@@ -55,8 +55,8 @@ class Hook {
 		 */
 		add_action( 'init', function() {
 			require_once BEAF_INC_PATH . 'Hook/PostType.php';
-			if ( class_exists( 'PostType' ) ) {
-				(new PostType)->bafg_image_before_after_foucs_posttype();
+			if ( class_exists( 'BafgPostType' ) ) {
+				(new BafgPostType)->bafg_image_before_after_foucs_posttype();
 			}
 		}, 8 );
 
@@ -66,8 +66,8 @@ class Hook {
 		 */
 		add_action( 'add_meta_boxes', function() {
 			require_once BEAF_INC_PATH . 'Hook/PostType.php';
-			if ( class_exists( 'PostType' ) ) {
-				(new PostType)->bafg_add_slider_metabox();
+			if ( class_exists( 'BafgPostType' ) ) {
+				(new BafgPostType)->bafg_add_slider_metabox();
 			}
 		} );
 
@@ -89,7 +89,7 @@ class Hook {
 			if ( class_exists( 'BafgAdminMenu' ) ) {
 				(new BafgAdminMenu)->bafg_register_menu_page();
 			}
-		} );
+		}, 20 );
 
 		/**
 		 * Widgets — include and register at widgets_init.
@@ -124,8 +124,8 @@ class Hook {
 		 */
 		add_action( 'wp_enqueue_scripts', function() {
 			require_once BEAF_PLUGIN_PATH . 'inc/Hook/LoadAssets.php';
-			if ( class_exists( 'LoadAssest' ) ) {
-				$loader = new LoadAssest();
+			if ( class_exists( 'BafgLoadAssets' ) ) {
+				$loader = new BafgLoadAssets();
 				$loader->bafg_image_before_after_foucs_scripts();
 			}
 		}, 999 );
@@ -136,7 +136,7 @@ class Hook {
 		 * Elementor editor assets — safe: the action only fires when Elementor is loaded.
 		 */
 		require_once( BEAF_PLUGIN_PATH . 'inc/Hook/LoadAssets.php' );
-		$loadAssets = new LoadAssest();
+		$loadAssets = new BafgLoadAssets();
 
 		if ( did_action( 'elementor/loaded' ) ) {
 			add_action( 'elementor/editor/before_enqueue_scripts', [ $loadAssets,'bafg_image_before_after_foucs_scripts' ] ); 
@@ -147,9 +147,9 @@ class Hook {
 		 */
 		add_action( 'admin_enqueue_scripts', function( $hook ) {
 			require_once BEAF_PLUGIN_PATH . 'inc/Hook/LoadAssets.php';
-			if ( class_exists( 'LoadAssest' ) ) {
-				$loader = new LoadAssest();
-				$loader->BEAF_tourfic_admin_denqueue_script( $hook );
+			if ( class_exists( 'BafgLoadAssets' ) ) {
+				$loader = new BafgLoadAssets();
+				$loader->bafg_admin_denqueue_script( $hook );
 			}
 		}, 20 );
 

@@ -193,7 +193,7 @@ class BAFG_Options {
 		if ( $column_name === 'bafg_shortcode' ) {
 			$post_id = $id;
 			$shortcode = '[bafg id="' . $post_id . '"]';
-			echo '<input type="text" name="bafg_display_shortcode" class="bafg_display_shortcode" value="' . esc_attr( $shortcode ) . '" readonly ">';
+			echo '<input type="text" name="bafg_display_shortcode" class="bafg_display_shortcode" value="' . esc_attr( $shortcode ) . '" readonly>';
 	
 		}
 	}

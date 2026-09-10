@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 	exit();
 }
 
-class LoadAssest{
+class BafgLoadAssets{
 
     /*
 	 * Enqueue css and js in frontend
@@ -43,7 +43,7 @@ class LoadAssest{
     /*
 	 *Admin setting option dequeue 
 	 */
-	public function BEAF_tourfic_admin_denqueue_script( $screen ) {
+	public function bafg_admin_denqueue_script( $screen ) {
 		global $post_type;
 		$BEAF_options_screens = array(
 			'bafg_page_beaf_settings',

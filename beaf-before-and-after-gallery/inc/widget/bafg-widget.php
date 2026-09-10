@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit();
 }
  
-class bafg_widget extends WP_Widget {
+class BAFG_Widget extends WP_Widget {
  
     function __construct() {
  
@@ -112,4 +112,4 @@ class bafg_widget extends WP_Widget {
     }
  
 }
-$bafg_widget = new bafg_widget();
+$bafg_widget = new BAFG_Widget();

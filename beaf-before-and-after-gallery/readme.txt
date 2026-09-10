@@ -1,10 +1,10 @@
 === Ultimate Before After Image Slider & Gallery - BEAF ===
-Contributors: themefic, hasanet, codexa, mdashikul, hemelhasan, raihan143
+Contributors: themefic, hasanet, mdashikul, hemelhasan, kamrul0424
 Tags: before after, before after elementor, before after slider, before and after slider, elementor before and after slider
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 4.7.19
+Stable tag: 4.7.20
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -330,21 +330,16 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Changelog ==
 
-= 4.7.19 – Aug 24, 2026 =
+= 4.7.20 – Sep 10, 2026 =
+- Improved: Overall system stability and performance.
+- Improved: Plugin code structure and WordPress compatibility.
 
+= 4.7.19 – Aug 24, 2026 =
 - Security: Improved vulnerability in slider label rendering.
 - Security: Improved capability and nonce security issues.
 - Fix: Improved settings and WordPress.org guideline compliance.
 
-= 4.7.18 – Jun 22, 2026 =
-
-- Info: System stability has been improved.
-
-= 4.7.17 – May 26, 2026 =
-
-- Compatibility: Fully compatible with WordPress v7.0.
-
-= Changelog Between 2020 - 2023 =
+= Changelog Between 2020 - 2026 =
 Find them [here](https://themefic.com/plugins/beaf/#changelogs).
 
 = 1.0.0 - 29/01/2020 =

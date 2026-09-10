@@ -134,7 +134,7 @@ if ( ! class_exists( 'BEAF_Options' ) ) {
 				'bafg_page_beaf_settings',
 			);
 			$tf_options_post_type = array( 'bafg' );
-			$admin_date_format_for_users = ! empty( Hook::beaf_opt( "tf-date-format-for-users" ) ) ? Hook::beaf_opt( "tf-date-format-for-users" ) : "Y/m/d";
+			$admin_date_format_for_users = ! empty( BafgHook::beaf_opt( "tf-date-format-for-users" ) ) ? BafgHook::beaf_opt( "tf-date-format-for-users" ) : "Y/m/d";
 
 			//Css
 			if ( in_array( $screen, $tf_options_screens ) || in_array( $post_type, $tf_options_post_type ) ) {

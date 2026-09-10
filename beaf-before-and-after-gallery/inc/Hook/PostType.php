@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 	exit();
 }
     
-class PostType {
+class BafgPostType {
 
     /**
      * Register Slider post type

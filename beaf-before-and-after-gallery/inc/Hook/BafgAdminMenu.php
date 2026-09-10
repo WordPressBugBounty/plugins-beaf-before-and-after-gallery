@@ -33,11 +33,46 @@ class BafgAdminMenu {
 			add_submenu_page(
 				'edit.php?post_type=bafg',
 				'Go Pro',
-				'<span class="bafg-pro-link">★ Go Pro</span>',
+				'<span class="bafg-pro-link">★ Upgrade to Pro</span>',
 				'manage_options',
 				'https://themefic.com/plugins/beaf/pro/'
 			);
+
+			add_action( 'admin_footer', 'bafg_upgrade_to_pro_new_tab' );
+
 		}
+
+		/**
+		 * Open the Upgrade to Pro menu item in a new tab.
+		 */
+		function bafg_upgrade_to_pro_new_tab() {
+			?>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const links = document.querySelectorAll('#adminmenu a');
+
+					links.forEach(function (link) {
+						if (link.href.indexOf('themefic.com') !== -1) {
+							link.target = '_blank';
+							link.rel = 'noopener noreferrer';
+						}
+					});
+				});
+			</script>
+			<style>
+				.bafg-pro-link {
+					color: #fff;
+					font-weight: bold;
+					background: #ca4a1f;
+					padding: 4px 6px;
+					border-radius: 5px;
+					line-height: 1.6;
+					display: inline-block;
+				}
+			</style>
+			<?php
+		}
+
 	}
 
 	/*
