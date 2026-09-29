@@ -4,7 +4,7 @@ Tags: before after, before after elementor, before after slider, before and afte
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 4.7.20
+Stable tag: 4.7.21
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -330,14 +330,13 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 
 == Changelog ==
 
+= 4.7.21 – Sep 29, 2026 = 
+- Fixed: Resolved an issue causing the preloader to break.
+- Improved: Overall system stability and performance.
+
 = 4.7.20 – Sep 10, 2026 =
 - Improved: Overall system stability and performance.
 - Improved: Plugin code structure and WordPress compatibility.
-
-= 4.7.19 – Aug 24, 2026 =
-- Security: Improved vulnerability in slider label rendering.
-- Security: Improved capability and nonce security issues.
-- Fix: Improved settings and WordPress.org guideline compliance.
 
 = Changelog Between 2020 - 2026 =
 Find them [here](https://themefic.com/plugins/beaf/#changelogs).

@@ -31,6 +31,11 @@
                 click_to_move: clickToMove
             });
  
+            $(document).ready(function () {
+                $(this).find('.bafg-preloader').delay(1000).fadeOut(300, function () {
+                    $(this).remove();
+                });
+            }.bind(this));
             
             //Label OutSide
             var bafgLabelOutside = $(this).data('label_outside');
