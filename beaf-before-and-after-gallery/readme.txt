@@ -4,7 +4,7 @@ Tags: before after, before after elementor, before after slider, before and afte
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 4.7.21
+Stable tag: 4.7.22
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -329,6 +329,9 @@ Yes, we provide full support on the WordPress.org forums & [Our Website](https:/
 20. Image Watermark (Pro)
 
 == Changelog ==
+
+= 4.7.22 – Nov 15, 2026 = 
+- Improved: System stability and performance.
 
 = 4.7.21 – Sep 29, 2026 = 
 - Fixed: Resolved an issue causing the preloader to break.
