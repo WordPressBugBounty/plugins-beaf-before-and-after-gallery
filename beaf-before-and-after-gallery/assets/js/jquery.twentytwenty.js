@@ -15,7 +15,7 @@
     return this.each(function() { 
       var sliderPct         = options.default_offset_pct;
       var container         = $(this);
-      var sliderOrientation = options.orientation;
+      var sliderOrientation = (options.orientation === 'vertical') ? 'vertical' : 'horizontal';
       var beforeDirection   = (sliderOrientation === 'vertical') ? 'down' : 'left';
       var afterDirection    = (sliderOrientation === 'vertical') ? 'up' : 'right';
 
@@ -25,7 +25,7 @@
         return $('<div>').addClass(className).attr('data-content', safeContent);
       };
 
-      container.wrap("<div class='twentytwenty-wrapper bafg-twentytwenty-wrapper twentytwenty-" + sliderOrientation + "'></div>");
+      container.wrap($('<div>').addClass('twentytwenty-wrapper bafg-twentytwenty-wrapper twentytwenty-' + sliderOrientation));
       if(!options.no_overlay) {
         container.append("<div class='twentytwenty-overlay'></div>");
         var overlay = container.find(".twentytwenty-overlay");
@@ -34,7 +34,7 @@
         var labelOutside = container.data('label_outside');
         if(labelOutside == true && sliderOrientation == 'vertical' ){
           var bafgWrapper = container.closest(".twentytwenty-wrapper");
-          bafgWrapper.wrap("<div class='bafg-outside-label-wrapper twentytwenty-" + sliderOrientation + "'></div>");
+          bafgWrapper.wrap($('<div>').addClass('bafg-outside-label-wrapper twentytwenty-' + sliderOrientation));
           var outsideLabel = bafgWrapper.parent(".bafg-outside-label-wrapper");
           outsideLabel.prepend(createLabel('twentytwenty-after-label', options.after_label));
           outsideLabel.prepend(createLabel('twentytwenty-before-label', options.before_label));

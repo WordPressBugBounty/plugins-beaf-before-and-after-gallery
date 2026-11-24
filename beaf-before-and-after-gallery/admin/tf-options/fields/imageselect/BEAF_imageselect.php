@@ -9,6 +9,15 @@ if ( ! class_exists( 'BEAF_imageselect' ) ) {
 			parent::__construct( $field, $value, $settings_id, $parent_field );
 		}
 
+		// sanitize
+		public function sanitize() {
+			$value = sanitize_text_field( $this->value );
+			if ( ! empty( $this->field['options'] ) && is_array( $this->field['options'] ) ) {
+				return array_key_exists( $value, $this->field['options'] ) ? $value : ( isset( $this->field['default'] ) ? $this->field['default'] : '' );
+			}
+			return $value;
+		}
+
 		public function render() {
 			if ( isset( $this->field['options'] ) ) {
 				$inline = ( isset( $this->field['inline'] ) && $this->field['inline'] ) ? 'tf-inline' : '';

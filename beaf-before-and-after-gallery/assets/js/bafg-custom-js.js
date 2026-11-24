@@ -21,8 +21,10 @@
                 var clickToMove = true;
             }
 
+            var orientation = $(this).attr('bafg-orientation') === 'vertical' ? 'vertical' : 'horizontal';
+
             $(this).twentytwenty({
-                orientation: $(this).attr('bafg-orientation'),
+                orientation: orientation,
                 default_offset_pct: $(this).attr('bafg-default-offset'),
                 before_label: $(this).attr('bafg-before-label'),
                 after_label: $(this).attr('bafg-after-label'),

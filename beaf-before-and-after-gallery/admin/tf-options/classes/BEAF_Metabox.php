@@ -169,6 +169,10 @@ if ( ! class_exists( 'BEAF_Metabox' ) ) {
 									$tf_meta_box_value[ $field['id'] ] = $_field->sanitize();
 								}
 
+								if ( 'bafg_image_styles' === $field['id'] && isset( $tf_meta_box_value[ $field['id'] ] ) ) {
+									$tf_meta_box_value[ $field['id'] ] = in_array( $tf_meta_box_value[ $field['id'] ], array( 'horizontal', 'vertical' ), true ) ? $tf_meta_box_value[ $field['id'] ] : 'horizontal';
+								}
+
 							}
 						}
 					}

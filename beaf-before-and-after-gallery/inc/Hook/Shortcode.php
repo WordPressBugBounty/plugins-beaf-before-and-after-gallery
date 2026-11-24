@@ -85,7 +85,8 @@ class BAFG_Shortcode {
 
 		$b_image              = ! empty( $meta['bafg_before_image'] ) ? $meta['bafg_before_image'] : '';
 		$a_image              = ! empty( $meta['bafg_after_image'] ) ? $meta['bafg_after_image'] : '';
-		$orientation          = ! empty( $meta['bafg_image_styles'] ) ? $meta['bafg_image_styles'] : 'horizontal';
+		$allowed_orientations = array( 'horizontal', 'vertical' );
+		$orientation          = ( ! empty( $meta['bafg_image_styles'] ) && in_array( $meta['bafg_image_styles'], $allowed_orientations, true ) ) ? $meta['bafg_image_styles'] : 'horizontal';
 		$offset               = ! empty( $meta['bafg_default_offset'] ) ? $meta['bafg_default_offset'] : '0.5';
 		$before_label         = ! empty( $meta['bafg_before_label'] ) ? esc_html( $meta['bafg_before_label'] ) : esc_html__( 'Before', 'beaf-before-and-after-gallery' );
 		$after_label          = ! empty( $meta['bafg_after_label'] ) ? esc_html( $meta['bafg_after_label'] ) : esc_html__( 'After', 'beaf-before-and-after-gallery' );
